@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/images', 'ImagesController@getIndex');
+Route::get('/', 'HomeController@getIndex');

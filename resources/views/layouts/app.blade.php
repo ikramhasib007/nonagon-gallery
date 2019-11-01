@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Demo - @yield('title')</title>
-	<link rel="stylesheet" href="">
-</head>
-<body>
-	<nav>
-		<ul>
-			<li><a href="" title=""></a></li>
-		</ul>
-	</nav>
-	<div class="container">
-        @yield('content')
-    </div>
-</body>
+<html lang="{{ app()->getLocale() }}">
+    <head>
+        
+        @include('partials._head')
+
+    </head>
+    <body>
+
+        <header>
+            @include('partials._nav')
+        </header>
+        
+        <!-- main container -->
+        <main>
+            <!-- .container -->
+            <div class="container">
+    
+                @include('partials._messages')
+                
+                @yield('content')
+    
+            </div>
+            <!-- /.container -->
+        </main>
+        <!-- /main container -->
+
+
+        <!--Footer-->
+        @include('partials._footer')
+        <!--/.Footer-->
+
+        <!-- SCRIPTS -->
+        @include('partials._javascript')
+
+    </body>
 </html>
