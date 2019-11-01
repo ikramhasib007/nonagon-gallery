@@ -6274,6 +6274,160 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/react-image-lightbox/style.css":
+/*!*************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/react-image-lightbox/style.css ***!
+  \*************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@-webkit-keyframes closeWindow {\n  0% {\n    opacity: 1;\n  }\n  100% {\n    opacity: 0;\n  }\n}\n\n@keyframes closeWindow {\n  0% {\n    opacity: 1;\n  }\n  100% {\n    opacity: 0;\n  }\n}\n\n.ril__outer {\n  background-color: rgba(0, 0, 0, 0.85);\n  outline: none;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 1000;\n  width: 100%;\n  height: 100%;\n  -ms-content-zooming: none;\n  -ms-user-select: none;\n  -ms-touch-select: none;\n  -ms-touch-action: none;\n      touch-action: none;\n}\n\n.ril__outerClosing {\n  opacity: 0;\n}\n\n.ril__inner {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}\n\n.ril__image,\n.ril__imagePrev,\n.ril__imageNext {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  max-width: none;\n  -ms-content-zooming: none;\n  -ms-user-select: none;\n  -ms-touch-select: none;\n  -ms-touch-action: none;\n      touch-action: none;\n}\n\n.ril__imageDiscourager {\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: contain;\n}\n\n.ril__navButtons {\n  border: none;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  width: 20px;\n  height: 34px;\n  padding: 40px 30px;\n  margin: auto;\n  cursor: pointer;\n  opacity: 0.7;\n}\n.ril__navButtons:hover {\n  opacity: 1;\n}\n.ril__navButtons:active {\n  opacity: 0.7;\n}\n\n.ril__navButtonPrev {\n  left: 0;\n  background: rgba(0, 0, 0, 0.2)\n    url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjM0Ij48cGF0aCBkPSJtIDE5LDMgLTIsLTIgLTE2LDE2IDE2LDE2IDEsLTEgLTE1LC0xNSAxNSwtMTUgeiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==')\n    no-repeat center;\n}\n\n.ril__navButtonNext {\n  right: 0;\n  background: rgba(0, 0, 0, 0.2)\n    url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjM0Ij48cGF0aCBkPSJtIDEsMyAyLC0yIDE2LDE2IC0xNiwxNiAtMSwtMSAxNSwtMTUgLTE1LC0xNSB6IiBmaWxsPSIjRkZGIi8+PC9zdmc+')\n    no-repeat center;\n}\n\n.ril__downloadBlocker {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');\n  background-size: cover;\n}\n\n.ril__caption,\n.ril__toolbar {\n  background-color: rgba(0, 0, 0, 0.5);\n  position: absolute;\n  left: 0;\n  right: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n\n.ril__caption {\n  bottom: 0;\n  max-height: 150px;\n  overflow: auto;\n}\n\n.ril__captionContent {\n  padding: 10px 20px;\n  color: #fff;\n}\n\n.ril__toolbar {\n  top: 0;\n  height: 50px;\n}\n\n.ril__toolbarSide {\n  height: 50px;\n  margin: 0;\n}\n\n.ril__toolbarLeftSide {\n  padding-left: 20px;\n  padding-right: 0;\n  -webkit-box-flex: 0;\n      -ms-flex: 0 1 auto;\n          flex: 0 1 auto;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n\n.ril__toolbarRightSide {\n  padding-left: 0;\n  padding-right: 20px;\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 auto;\n          flex: 0 0 auto;\n}\n\n.ril__toolbarItem {\n  display: inline-block;\n  line-height: 50px;\n  padding: 0;\n  color: #fff;\n  font-size: 120%;\n  max-width: 100%;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n\n.ril__toolbarItemChild {\n  vertical-align: middle;\n}\n\n.ril__builtinButton {\n  width: 40px;\n  height: 35px;\n  cursor: pointer;\n  border: none;\n  opacity: 0.7;\n}\n.ril__builtinButton:hover {\n  opacity: 1;\n}\n.ril__builtinButton:active {\n  outline: none;\n}\n\n.ril__builtinButtonDisabled {\n  cursor: default;\n  opacity: 0.5;\n}\n.ril__builtinButtonDisabled:hover {\n  opacity: 0.5;\n}\n\n.ril__closeButton {\n  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIj48cGF0aCBkPSJtIDEsMyAxLjI1LC0xLjI1IDcuNSw3LjUgNy41LC03LjUgMS4yNSwxLjI1IC03LjUsNy41IDcuNSw3LjUgLTEuMjUsMS4yNSAtNy41LC03LjUgLTcuNSw3LjUgLTEuMjUsLTEuMjUgNy41LC03LjUgLTcuNSwtNy41IHoiIGZpbGw9IiNGRkYiLz48L3N2Zz4=')\n    no-repeat center;\n}\n\n.ril__zoomInButton {\n  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGcgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+PHBhdGggZD0iTTEgMTlsNi02Ii8+PHBhdGggZD0iTTkgOGg2Ii8+PHBhdGggZD0iTTEyIDV2NiIvPjwvZz48Y2lyY2xlIGN4PSIxMiIgY3k9IjgiIHI9IjciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+')\n    no-repeat center;\n}\n\n.ril__zoomOutButton {\n  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGcgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+PHBhdGggZD0iTTEgMTlsNi02Ii8+PHBhdGggZD0iTTkgOGg2Ii8+PC9nPjxjaXJjbGUgY3g9IjEyIiBjeT0iOCIgcj0iNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=')\n    no-repeat center;\n}\n\n.ril__outerAnimating {\n  -webkit-animation-name: closeWindow;\n          animation-name: closeWindow;\n}\n\n@-webkit-keyframes pointFade {\n  0%,\n  19.999%,\n  100% {\n    opacity: 0;\n  }\n  20% {\n    opacity: 1;\n  }\n}\n\n@keyframes pointFade {\n  0%,\n  19.999%,\n  100% {\n    opacity: 0;\n  }\n  20% {\n    opacity: 1;\n  }\n}\n\n.ril__loadingCircle {\n  width: 60px;\n  height: 60px;\n  position: relative;\n}\n\n.ril__loadingCirclePoint {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  left: 0;\n  top: 0;\n}\n.ril__loadingCirclePoint::before {\n  content: '';\n  display: block;\n  margin: 0 auto;\n  width: 11%;\n  height: 30%;\n  background-color: #fff;\n  border-radius: 30%;\n  -webkit-animation: pointFade 800ms infinite ease-in-out both;\n          animation: pointFade 800ms infinite ease-in-out both;\n}\n.ril__loadingCirclePoint:nth-of-type(1) {\n  -webkit-transform: rotate(0deg);\n          transform: rotate(0deg);\n}\n.ril__loadingCirclePoint:nth-of-type(7) {\n  -webkit-transform: rotate(180deg);\n          transform: rotate(180deg);\n}\n.ril__loadingCirclePoint:nth-of-type(1)::before,\n.ril__loadingCirclePoint:nth-of-type(7)::before {\n  -webkit-animation-delay: -800ms;\n          animation-delay: -800ms;\n}\n.ril__loadingCirclePoint:nth-of-type(2) {\n  -webkit-transform: rotate(30deg);\n          transform: rotate(30deg);\n}\n.ril__loadingCirclePoint:nth-of-type(8) {\n  -webkit-transform: rotate(210deg);\n          transform: rotate(210deg);\n}\n.ril__loadingCirclePoint:nth-of-type(2)::before,\n.ril__loadingCirclePoint:nth-of-type(8)::before {\n  -webkit-animation-delay: -666ms;\n          animation-delay: -666ms;\n}\n.ril__loadingCirclePoint:nth-of-type(3) {\n  -webkit-transform: rotate(60deg);\n          transform: rotate(60deg);\n}\n.ril__loadingCirclePoint:nth-of-type(9) {\n  -webkit-transform: rotate(240deg);\n          transform: rotate(240deg);\n}\n.ril__loadingCirclePoint:nth-of-type(3)::before,\n.ril__loadingCirclePoint:nth-of-type(9)::before {\n  -webkit-animation-delay: -533ms;\n          animation-delay: -533ms;\n}\n.ril__loadingCirclePoint:nth-of-type(4) {\n  -webkit-transform: rotate(90deg);\n          transform: rotate(90deg);\n}\n.ril__loadingCirclePoint:nth-of-type(10) {\n  -webkit-transform: rotate(270deg);\n          transform: rotate(270deg);\n}\n.ril__loadingCirclePoint:nth-of-type(4)::before,\n.ril__loadingCirclePoint:nth-of-type(10)::before {\n  -webkit-animation-delay: -400ms;\n          animation-delay: -400ms;\n}\n.ril__loadingCirclePoint:nth-of-type(5) {\n  -webkit-transform: rotate(120deg);\n          transform: rotate(120deg);\n}\n.ril__loadingCirclePoint:nth-of-type(11) {\n  -webkit-transform: rotate(300deg);\n          transform: rotate(300deg);\n}\n.ril__loadingCirclePoint:nth-of-type(5)::before,\n.ril__loadingCirclePoint:nth-of-type(11)::before {\n  -webkit-animation-delay: -266ms;\n          animation-delay: -266ms;\n}\n.ril__loadingCirclePoint:nth-of-type(6) {\n  -webkit-transform: rotate(150deg);\n          transform: rotate(150deg);\n}\n.ril__loadingCirclePoint:nth-of-type(12) {\n  -webkit-transform: rotate(330deg);\n          transform: rotate(330deg);\n}\n.ril__loadingCirclePoint:nth-of-type(6)::before,\n.ril__loadingCirclePoint:nth-of-type(12)::before {\n  -webkit-animation-delay: -133ms;\n          animation-delay: -133ms;\n}\n.ril__loadingCirclePoint:nth-of-type(7) {\n  -webkit-transform: rotate(180deg);\n          transform: rotate(180deg);\n}\n.ril__loadingCirclePoint:nth-of-type(13) {\n  -webkit-transform: rotate(360deg);\n          transform: rotate(360deg);\n}\n.ril__loadingCirclePoint:nth-of-type(7)::before,\n.ril__loadingCirclePoint:nth-of-type(13)::before {\n  -webkit-animation-delay: 0ms;\n          animation-delay: 0ms;\n}\n\n.ril__loadingContainer {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n.ril__imagePrev .ril__loadingContainer,\n.ril__imageNext .ril__loadingContainer {\n  display: none;\n}\n\n.ril__errorContainer {\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  color: #fff;\n}\n.ril__imagePrev .ril__errorContainer,\n.ril__imageNext .ril__errorContainer {\n  display: none;\n}\n\n.ril__loadingContainer__icon {\n  color: #fff;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translateX(-50%) translateY(-50%);\n          transform: translateX(-50%) translateY(-50%);\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/lib/css-base.js":
+/*!*************************************************!*\
+  !*** ./node_modules/css-loader/lib/css-base.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/exenv/index.js":
+/*!*************************************!*\
+  !*** ./node_modules/exenv/index.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2015 Jed Watson.
+  Based on code that is Copyright 2013-2015, Facebook, Inc.
+  All rights reserved.
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var canUseDOM = !!(
+		typeof window !== 'undefined' &&
+		window.document &&
+		window.document.createElement
+	);
+
+	var ExecutionEnvironment = {
+
+		canUseDOM: canUseDOM,
+
+		canUseWorkers: typeof Worker !== 'undefined',
+
+		canUseEventListeners:
+			canUseDOM && !!(window.addEventListener || window.attachEvent),
+
+		canUseViewport: canUseDOM && !!window.screen
+
+	};
+
+	if (true) {
+		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return ExecutionEnvironment;
+		}).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+
+}());
+
+
+/***/ }),
+
 /***/ "./node_modules/is-buffer/index.js":
 /*!*****************************************!*\
   !*** ./node_modules/is-buffer/index.js ***!
@@ -37063,6 +37217,635 @@ module.exports = checkPropTypes;
 
 /***/ }),
 
+/***/ "./node_modules/prop-types/factoryWithTypeCheckers.js":
+/*!************************************************************!*\
+  !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+
+var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
+
+var has = Function.call.bind(Object.prototype.hasOwnProperty);
+var printWarning = function() {};
+
+if (true) {
+  printWarning = function(text) {
+    var message = 'Warning: ' + text;
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+}
+
+function emptyFunctionThatReturnsNull() {
+  return null;
+}
+
+module.exports = function(isValidElement, throwOnDirectAccess) {
+  /* global Symbol */
+  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+
+  /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */
+  function getIteratorFn(maybeIterable) {
+    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+    if (typeof iteratorFn === 'function') {
+      return iteratorFn;
+    }
+  }
+
+  /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */
+
+  var ANONYMOUS = '<<anonymous>>';
+
+  // Important!
+  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+  var ReactPropTypes = {
+    array: createPrimitiveTypeChecker('array'),
+    bool: createPrimitiveTypeChecker('boolean'),
+    func: createPrimitiveTypeChecker('function'),
+    number: createPrimitiveTypeChecker('number'),
+    object: createPrimitiveTypeChecker('object'),
+    string: createPrimitiveTypeChecker('string'),
+    symbol: createPrimitiveTypeChecker('symbol'),
+
+    any: createAnyTypeChecker(),
+    arrayOf: createArrayOfTypeChecker,
+    element: createElementTypeChecker(),
+    elementType: createElementTypeTypeChecker(),
+    instanceOf: createInstanceTypeChecker,
+    node: createNodeChecker(),
+    objectOf: createObjectOfTypeChecker,
+    oneOf: createEnumTypeChecker,
+    oneOfType: createUnionTypeChecker,
+    shape: createShapeTypeChecker,
+    exact: createStrictShapeTypeChecker,
+  };
+
+  /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */
+  /*eslint-disable no-self-compare*/
+  function is(x, y) {
+    // SameValue algorithm
+    if (x === y) {
+      // Steps 1-5, 7-10
+      // Steps 6.b-6.e: +0 != -0
+      return x !== 0 || 1 / x === 1 / y;
+    } else {
+      // Step 6.a: NaN == NaN
+      return x !== x && y !== y;
+    }
+  }
+  /*eslint-enable no-self-compare*/
+
+  /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */
+  function PropTypeError(message) {
+    this.message = message;
+    this.stack = '';
+  }
+  // Make `instanceof Error` still work for returned errors.
+  PropTypeError.prototype = Error.prototype;
+
+  function createChainableTypeChecker(validate) {
+    if (true) {
+      var manualPropTypeCallCache = {};
+      var manualPropTypeWarningCount = 0;
+    }
+    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+      componentName = componentName || ANONYMOUS;
+      propFullName = propFullName || propName;
+
+      if (secret !== ReactPropTypesSecret) {
+        if (throwOnDirectAccess) {
+          // New behavior only for users of `prop-types` package
+          var err = new Error(
+            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+            'Use `PropTypes.checkPropTypes()` to call them. ' +
+            'Read more at http://fb.me/use-check-prop-types'
+          );
+          err.name = 'Invariant Violation';
+          throw err;
+        } else if ( true && typeof console !== 'undefined') {
+          // Old behavior for people using React.PropTypes
+          var cacheKey = componentName + ':' + propName;
+          if (
+            !manualPropTypeCallCache[cacheKey] &&
+            // Avoid spamming the console because they are often not actionable except for lib authors
+            manualPropTypeWarningCount < 3
+          ) {
+            printWarning(
+              'You are manually calling a React.PropTypes validation ' +
+              'function for the `' + propFullName + '` prop on `' + componentName  + '`. This is deprecated ' +
+              'and will throw in the standalone `prop-types` package. ' +
+              'You may be seeing this warning due to a third-party PropTypes ' +
+              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.'
+            );
+            manualPropTypeCallCache[cacheKey] = true;
+            manualPropTypeWarningCount++;
+          }
+        }
+      }
+      if (props[propName] == null) {
+        if (isRequired) {
+          if (props[propName] === null) {
+            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+          }
+          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+        }
+        return null;
+      } else {
+        return validate(props, propName, componentName, location, propFullName);
+      }
+    }
+
+    var chainedCheckType = checkType.bind(null, false);
+    chainedCheckType.isRequired = checkType.bind(null, true);
+
+    return chainedCheckType;
+  }
+
+  function createPrimitiveTypeChecker(expectedType) {
+    function validate(props, propName, componentName, location, propFullName, secret) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== expectedType) {
+        // `propValue` being instance of, say, date/regexp, pass the 'object'
+        // check, but we can offer a more precise error message here rather than
+        // 'of type `object`'.
+        var preciseType = getPreciseType(propValue);
+
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createAnyTypeChecker() {
+    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+  }
+
+  function createArrayOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+      }
+      var propValue = props[propName];
+      if (!Array.isArray(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+      }
+      for (var i = 0; i < propValue.length; i++) {
+        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+        if (error instanceof Error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createElementTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      if (!isValidElement(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createElementTypeTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      if (!ReactIs.isValidElementType(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createInstanceTypeChecker(expectedClass) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!(props[propName] instanceof expectedClass)) {
+        var expectedClassName = expectedClass.name || ANONYMOUS;
+        var actualClassName = getClassName(props[propName]);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createEnumTypeChecker(expectedValues) {
+    if (!Array.isArray(expectedValues)) {
+      if (true) {
+        if (arguments.length > 1) {
+          printWarning(
+            'Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' +
+            'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).'
+          );
+        } else {
+          printWarning('Invalid argument supplied to oneOf, expected an array.');
+        }
+      }
+      return emptyFunctionThatReturnsNull;
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      for (var i = 0; i < expectedValues.length; i++) {
+        if (is(propValue, expectedValues[i])) {
+          return null;
+        }
+      }
+
+      var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+        var type = getPreciseType(value);
+        if (type === 'symbol') {
+          return String(value);
+        }
+        return value;
+      });
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createObjectOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+      }
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+      }
+      for (var key in propValue) {
+        if (has(propValue, key)) {
+          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+          if (error instanceof Error) {
+            return error;
+          }
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createUnionTypeChecker(arrayOfTypeCheckers) {
+    if (!Array.isArray(arrayOfTypeCheckers)) {
+       true ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : undefined;
+      return emptyFunctionThatReturnsNull;
+    }
+
+    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+      var checker = arrayOfTypeCheckers[i];
+      if (typeof checker !== 'function') {
+        printWarning(
+          'Invalid argument supplied to oneOfType. Expected an array of check functions, but ' +
+          'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.'
+        );
+        return emptyFunctionThatReturnsNull;
+      }
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+        var checker = arrayOfTypeCheckers[i];
+        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
+          return null;
+        }
+      }
+
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createNodeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!isNode(props[propName])) {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      for (var key in shapeTypes) {
+        var checker = shapeTypes[key];
+        if (!checker) {
+          continue;
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createStrictShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      // We need to check all keys in case some are required but missing from
+      // props.
+      var allKeys = assign({}, props[propName], shapeTypes);
+      for (var key in allKeys) {
+        var checker = shapeTypes[key];
+        if (!checker) {
+          return new PropTypeError(
+            'Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' +
+            '\nBad object: ' + JSON.stringify(props[propName], null, '  ') +
+            '\nValid keys: ' +  JSON.stringify(Object.keys(shapeTypes), null, '  ')
+          );
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function isNode(propValue) {
+    switch (typeof propValue) {
+      case 'number':
+      case 'string':
+      case 'undefined':
+        return true;
+      case 'boolean':
+        return !propValue;
+      case 'object':
+        if (Array.isArray(propValue)) {
+          return propValue.every(isNode);
+        }
+        if (propValue === null || isValidElement(propValue)) {
+          return true;
+        }
+
+        var iteratorFn = getIteratorFn(propValue);
+        if (iteratorFn) {
+          var iterator = iteratorFn.call(propValue);
+          var step;
+          if (iteratorFn !== propValue.entries) {
+            while (!(step = iterator.next()).done) {
+              if (!isNode(step.value)) {
+                return false;
+              }
+            }
+          } else {
+            // Iterator will provide entry [k,v] tuples rather than values.
+            while (!(step = iterator.next()).done) {
+              var entry = step.value;
+              if (entry) {
+                if (!isNode(entry[1])) {
+                  return false;
+                }
+              }
+            }
+          }
+        } else {
+          return false;
+        }
+
+        return true;
+      default:
+        return false;
+    }
+  }
+
+  function isSymbol(propType, propValue) {
+    // Native Symbol.
+    if (propType === 'symbol') {
+      return true;
+    }
+
+    // falsy value can't be a Symbol
+    if (!propValue) {
+      return false;
+    }
+
+    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+    if (propValue['@@toStringTag'] === 'Symbol') {
+      return true;
+    }
+
+    // Fallback for non-spec compliant Symbols which are polyfilled.
+    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+      return true;
+    }
+
+    return false;
+  }
+
+  // Equivalent of `typeof` but with special handling for array and regexp.
+  function getPropType(propValue) {
+    var propType = typeof propValue;
+    if (Array.isArray(propValue)) {
+      return 'array';
+    }
+    if (propValue instanceof RegExp) {
+      // Old webkits (at least until Android 4.0) return 'function' rather than
+      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+      // passes PropTypes.object.
+      return 'object';
+    }
+    if (isSymbol(propType, propValue)) {
+      return 'symbol';
+    }
+    return propType;
+  }
+
+  // This handles more types than `getPropType`. Only used for error messages.
+  // See `createPrimitiveTypeChecker`.
+  function getPreciseType(propValue) {
+    if (typeof propValue === 'undefined' || propValue === null) {
+      return '' + propValue;
+    }
+    var propType = getPropType(propValue);
+    if (propType === 'object') {
+      if (propValue instanceof Date) {
+        return 'date';
+      } else if (propValue instanceof RegExp) {
+        return 'regexp';
+      }
+    }
+    return propType;
+  }
+
+  // Returns a string that is postfixed to a warning about an invalid type.
+  // For example, "undefined" or "of type array"
+  function getPostfixForTypeWarning(value) {
+    var type = getPreciseType(value);
+    switch (type) {
+      case 'array':
+      case 'object':
+        return 'an ' + type;
+      case 'boolean':
+      case 'date':
+      case 'regexp':
+        return 'a ' + type;
+      default:
+        return type;
+    }
+  }
+
+  // Returns class name of the object, if any.
+  function getClassName(propValue) {
+    if (!propValue.constructor || !propValue.constructor.name) {
+      return ANONYMOUS;
+    }
+    return propValue.constructor.name;
+  }
+
+  ReactPropTypes.checkPropTypes = checkPropTypes;
+  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+  ReactPropTypes.PropTypes = ReactPropTypes;
+
+  return ReactPropTypes;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/prop-types/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (true) {
+  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "./node_modules/prop-types/factoryWithTypeCheckers.js")(ReactIs.isElement, throwOnDirectAccess);
+} else {}
+
+
+/***/ }),
+
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*************************************************************!*\
   !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
@@ -64871,6 +65654,3748 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-image-lightbox/dist/index.es.js":
+/*!************************************************************!*\
+  !*** ./node_modules/react-image-lightbox/dist/index.es.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-modal */ "./node_modules/react-modal/lib/index.js");
+/* harmony import */ var react_modal__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_modal__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (typeof call === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _slicedToArray(arr, i) {
+  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();
+}
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
+
+    return arr2;
+  }
+}
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+function _iterableToArray(iter) {
+  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+}
+
+function _iterableToArrayLimit(arr, i) {
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance");
+}
+
+/**
+ * Placeholder for future translate functionality
+ */
+function translate(str) {
+  var replaceStrings = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+
+  if (!str) {
+    return '';
+  }
+
+  var translated = str;
+
+  if (replaceStrings) {
+    Object.keys(replaceStrings).forEach(function (placeholder) {
+      translated = translated.replace(placeholder, replaceStrings[placeholder]);
+    });
+  }
+
+  return translated;
+}
+function getWindowWidth() {
+  return typeof global.window !== 'undefined' ? global.window.innerWidth : 0;
+}
+function getWindowHeight() {
+  return typeof global.window !== 'undefined' ? global.window.innerHeight : 0;
+} // Get the highest window context that isn't cross-origin
+// (When in an iframe)
+
+function getHighestSafeWindowContext() {
+  var self = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : global.window.self;
+
+  // If we reached the top level, return self
+  if (self === global.window.top) {
+    return self;
+  }
+
+  var getOrigin = function getOrigin(href) {
+    return href.match(/(.*\/\/.*?)(\/|$)/)[1];
+  }; // If parent is the same origin, we can move up one context
+  // Reference: https://stackoverflow.com/a/21965342/1601953
+
+
+  if (getOrigin(self.location.href) === getOrigin(self.document.referrer)) {
+    return getHighestSafeWindowContext(self.parent);
+  } // If a different origin, we consider the current level
+  // as the top reachable one
+
+
+  return self;
+}
+
+// Min image zoom level
+var MIN_ZOOM_LEVEL = 0; // Max image zoom level
+
+var MAX_ZOOM_LEVEL = 300; // Size ratio between previous and next zoom levels
+
+var ZOOM_RATIO = 1.007; // How much to increase/decrease the zoom level when the zoom buttons are clicked
+
+var ZOOM_BUTTON_INCREMENT_SIZE = 100; // Used to judge the amount of horizontal scroll needed to initiate a image move
+
+var WHEEL_MOVE_X_THRESHOLD = 200; // Used to judge the amount of vertical scroll needed to initiate a zoom action
+
+var WHEEL_MOVE_Y_THRESHOLD = 1;
+var KEYS = {
+  ESC: 27,
+  LEFT_ARROW: 37,
+  RIGHT_ARROW: 39
+}; // Actions
+
+var ACTION_NONE = 0;
+var ACTION_MOVE = 1;
+var ACTION_SWIPE = 2;
+var ACTION_PINCH = 3;
+
+var SOURCE_ANY = 0;
+var SOURCE_MOUSE = 1;
+var SOURCE_TOUCH = 2;
+var SOURCE_POINTER = 3; // Minimal swipe distance
+
+var MIN_SWIPE_DISTANCE = 200;
+
+var ReactImageLightbox =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ReactImageLightbox, _Component);
+
+  _createClass(ReactImageLightbox, null, [{
+    key: "isTargetMatchImage",
+    value: function isTargetMatchImage(target) {
+      return target && /ril-image-current/.test(target.className);
+    }
+  }, {
+    key: "parseMouseEvent",
+    value: function parseMouseEvent(mouseEvent) {
+      return {
+        id: 'mouse',
+        source: SOURCE_MOUSE,
+        x: parseInt(mouseEvent.clientX, 10),
+        y: parseInt(mouseEvent.clientY, 10)
+      };
+    }
+  }, {
+    key: "parseTouchPointer",
+    value: function parseTouchPointer(touchPointer) {
+      return {
+        id: touchPointer.identifier,
+        source: SOURCE_TOUCH,
+        x: parseInt(touchPointer.clientX, 10),
+        y: parseInt(touchPointer.clientY, 10)
+      };
+    }
+  }, {
+    key: "parsePointerEvent",
+    value: function parsePointerEvent(pointerEvent) {
+      return {
+        id: pointerEvent.pointerId,
+        source: SOURCE_POINTER,
+        x: parseInt(pointerEvent.clientX, 10),
+        y: parseInt(pointerEvent.clientY, 10)
+      };
+    } // Request to transition to the previous image
+
+  }, {
+    key: "getTransform",
+    value: function getTransform(_ref) {
+      var _ref$x = _ref.x,
+          x = _ref$x === void 0 ? 0 : _ref$x,
+          _ref$y = _ref.y,
+          y = _ref$y === void 0 ? 0 : _ref$y,
+          _ref$zoom = _ref.zoom,
+          zoom = _ref$zoom === void 0 ? 1 : _ref$zoom,
+          width = _ref.width,
+          targetWidth = _ref.targetWidth;
+      var nextX = x;
+      var windowWidth = getWindowWidth();
+
+      if (width > windowWidth) {
+        nextX += (windowWidth - width) / 2;
+      }
+
+      var scaleFactor = zoom * (targetWidth / width);
+      return {
+        transform: "translate3d(".concat(nextX, "px,").concat(y, "px,0) scale3d(").concat(scaleFactor, ",").concat(scaleFactor, ",1)")
+      };
+    }
+  }]);
+
+  function ReactImageLightbox(props) {
+    var _this;
+
+    _classCallCheck(this, ReactImageLightbox);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(ReactImageLightbox).call(this, props));
+    _this.state = {
+      //-----------------------------
+      // Animation
+      //-----------------------------
+      // Lightbox is closing
+      // When Lightbox is mounted, if animation is enabled it will open with the reverse of the closing animation
+      isClosing: !props.animationDisabled,
+      // Component parts should animate (e.g., when images are moving, or image is being zoomed)
+      shouldAnimate: false,
+      //-----------------------------
+      // Zoom settings
+      //-----------------------------
+      // Zoom level of image
+      zoomLevel: MIN_ZOOM_LEVEL,
+      //-----------------------------
+      // Image position settings
+      //-----------------------------
+      // Horizontal offset from center
+      offsetX: 0,
+      // Vertical offset from center
+      offsetY: 0,
+      // image load error for srcType
+      loadErrorStatus: {}
+    }; // Refs
+
+    _this.outerEl = react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();
+    _this.zoomInBtn = react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();
+    _this.zoomOutBtn = react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();
+    _this.caption = react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef();
+    _this.closeIfClickInner = _this.closeIfClickInner.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleImageDoubleClick = _this.handleImageDoubleClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleImageMouseWheel = _this.handleImageMouseWheel.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleKeyInput = _this.handleKeyInput.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleMouseUp = _this.handleMouseUp.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleMouseDown = _this.handleMouseDown.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleMouseMove = _this.handleMouseMove.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleOuterMousewheel = _this.handleOuterMousewheel.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleTouchStart = _this.handleTouchStart.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleTouchMove = _this.handleTouchMove.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleTouchEnd = _this.handleTouchEnd.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handlePointerEvent = _this.handlePointerEvent.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleCaptionMousewheel = _this.handleCaptionMousewheel.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleWindowResize = _this.handleWindowResize.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleZoomInButtonClick = _this.handleZoomInButtonClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleZoomOutButtonClick = _this.handleZoomOutButtonClick.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.requestClose = _this.requestClose.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.requestMoveNext = _this.requestMoveNext.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.requestMovePrev = _this.requestMovePrev.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    return _this;
+  }
+
+  _createClass(ReactImageLightbox, [{
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      // Timeouts - always clear it before umount
+      this.timeouts = []; // Current action
+
+      this.currentAction = ACTION_NONE; // Events source
+
+      this.eventsSource = SOURCE_ANY; // Empty pointers list
+
+      this.pointerList = []; // Prevent inner close
+
+      this.preventInnerClose = false;
+      this.preventInnerCloseTimeout = null; // Used to disable animation when changing props.mainSrc|nextSrc|prevSrc
+
+      this.keyPressed = false; // Used to store load state / dimensions of images
+
+      this.imageCache = {}; // Time the last keydown event was called (used in keyboard action rate limiting)
+
+      this.lastKeyDownTime = 0; // Used for debouncing window resize event
+
+      this.resizeTimeout = null; // Used to determine when actions are triggered by the scroll wheel
+
+      this.wheelActionTimeout = null;
+      this.resetScrollTimeout = null;
+      this.scrollX = 0;
+      this.scrollY = 0; // Used in panning zoomed images
+
+      this.moveStartX = 0;
+      this.moveStartY = 0;
+      this.moveStartOffsetX = 0;
+      this.moveStartOffsetY = 0; // Used to swipe
+
+      this.swipeStartX = 0;
+      this.swipeStartY = 0;
+      this.swipeEndX = 0;
+      this.swipeEndY = 0; // Used to pinch
+
+      this.pinchTouchList = null;
+      this.pinchDistance = 0; // Used to differentiate between images with identical src
+
+      this.keyCounter = 0; // Used to detect a move when all src's remain unchanged (four or more of the same image in a row)
+
+      this.moveRequested = false;
+
+      if (!this.props.animationDisabled) {
+        // Make opening animation play
+        this.setState({
+          isClosing: false
+        });
+      }
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      // Prevents cross-origin errors when using a cross-origin iframe
+      this.windowContext = getHighestSafeWindowContext();
+      this.listeners = {
+        resize: this.handleWindowResize,
+        mouseup: this.handleMouseUp,
+        touchend: this.handleTouchEnd,
+        touchcancel: this.handleTouchEnd,
+        pointerdown: this.handlePointerEvent,
+        pointermove: this.handlePointerEvent,
+        pointerup: this.handlePointerEvent,
+        pointercancel: this.handlePointerEvent
+      };
+      Object.keys(this.listeners).forEach(function (type) {
+        _this2.windowContext.addEventListener(type, _this2.listeners[type]);
+      });
+      this.loadAllImages();
+    }
+  }, {
+    key: "componentWillReceiveProps",
+    value: function componentWillReceiveProps(nextProps) {
+      var _this3 = this;
+
+      // Iterate through the source types for prevProps and nextProps to
+      //  determine if any of the sources changed
+      var sourcesChanged = false;
+      var prevSrcDict = {};
+      var nextSrcDict = {};
+      this.getSrcTypes().forEach(function (srcType) {
+        if (_this3.props[srcType.name] !== nextProps[srcType.name]) {
+          sourcesChanged = true;
+          prevSrcDict[_this3.props[srcType.name]] = true;
+          nextSrcDict[nextProps[srcType.name]] = true;
+        }
+      });
+
+      if (sourcesChanged || this.moveRequested) {
+        // Reset the loaded state for images not rendered next
+        Object.keys(prevSrcDict).forEach(function (prevSrc) {
+          if (!(prevSrc in nextSrcDict) && prevSrc in _this3.imageCache) {
+            _this3.imageCache[prevSrc].loaded = false;
+          }
+        });
+        this.moveRequested = false; // Load any new images
+
+        this.loadAllImages(nextProps);
+      }
+    }
+  }, {
+    key: "shouldComponentUpdate",
+    value: function shouldComponentUpdate() {
+      // Wait for move...
+      return !this.moveRequested;
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      var _this4 = this;
+
+      this.didUnmount = true;
+      Object.keys(this.listeners).forEach(function (type) {
+        _this4.windowContext.removeEventListener(type, _this4.listeners[type]);
+      });
+      this.timeouts.forEach(function (tid) {
+        return clearTimeout(tid);
+      });
+    }
+  }, {
+    key: "setTimeout",
+    value: function (_setTimeout) {
+      function setTimeout(_x, _x2) {
+        return _setTimeout.apply(this, arguments);
+      }
+
+      setTimeout.toString = function () {
+        return _setTimeout.toString();
+      };
+
+      return setTimeout;
+    }(function (func, time) {
+      var _this5 = this;
+
+      var id = setTimeout(function () {
+        _this5.timeouts = _this5.timeouts.filter(function (tid) {
+          return tid !== id;
+        });
+        func();
+      }, time);
+      this.timeouts.push(id);
+      return id;
+    })
+  }, {
+    key: "setPreventInnerClose",
+    value: function setPreventInnerClose() {
+      var _this6 = this;
+
+      if (this.preventInnerCloseTimeout) {
+        this.clearTimeout(this.preventInnerCloseTimeout);
+      }
+
+      this.preventInnerClose = true;
+      this.preventInnerCloseTimeout = this.setTimeout(function () {
+        _this6.preventInnerClose = false;
+        _this6.preventInnerCloseTimeout = null;
+      }, 100);
+    } // Get info for the best suited image to display with the given srcType
+
+  }, {
+    key: "getBestImageForType",
+    value: function getBestImageForType(srcType) {
+      var imageSrc = this.props[srcType];
+      var fitSizes = {};
+
+      if (this.isImageLoaded(imageSrc)) {
+        // Use full-size image if available
+        fitSizes = this.getFitSizes(this.imageCache[imageSrc].width, this.imageCache[imageSrc].height);
+      } else if (this.isImageLoaded(this.props["".concat(srcType, "Thumbnail")])) {
+        // Fall back to using thumbnail if the image has not been loaded
+        imageSrc = this.props["".concat(srcType, "Thumbnail")];
+        fitSizes = this.getFitSizes(this.imageCache[imageSrc].width, this.imageCache[imageSrc].height, true);
+      } else {
+        return null;
+      }
+
+      return {
+        src: imageSrc,
+        height: this.imageCache[imageSrc].height,
+        width: this.imageCache[imageSrc].width,
+        targetHeight: fitSizes.height,
+        targetWidth: fitSizes.width
+      };
+    } // Get sizing for when an image is larger than the window
+
+  }, {
+    key: "getFitSizes",
+    value: function getFitSizes(width, height, stretch) {
+      var boxSize = this.getLightboxRect();
+      var maxHeight = boxSize.height - this.props.imagePadding * 2;
+      var maxWidth = boxSize.width - this.props.imagePadding * 2;
+
+      if (!stretch) {
+        maxHeight = Math.min(maxHeight, height);
+        maxWidth = Math.min(maxWidth, width);
+      }
+
+      var maxRatio = maxWidth / maxHeight;
+      var srcRatio = width / height;
+
+      if (maxRatio > srcRatio) {
+        // height is the constraining dimension of the photo
+        return {
+          width: width * maxHeight / height,
+          height: maxHeight
+        };
+      }
+
+      return {
+        width: maxWidth,
+        height: height * maxWidth / width
+      };
+    }
+  }, {
+    key: "getMaxOffsets",
+    value: function getMaxOffsets() {
+      var zoomLevel = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.state.zoomLevel;
+      var currentImageInfo = this.getBestImageForType('mainSrc');
+
+      if (currentImageInfo === null) {
+        return {
+          maxX: 0,
+          minX: 0,
+          maxY: 0,
+          minY: 0
+        };
+      }
+
+      var boxSize = this.getLightboxRect();
+      var zoomMultiplier = this.getZoomMultiplier(zoomLevel);
+      var maxX = 0;
+
+      if (zoomMultiplier * currentImageInfo.width - boxSize.width < 0) {
+        // if there is still blank space in the X dimension, don't limit except to the opposite edge
+        maxX = (boxSize.width - zoomMultiplier * currentImageInfo.width) / 2;
+      } else {
+        maxX = (zoomMultiplier * currentImageInfo.width - boxSize.width) / 2;
+      }
+
+      var maxY = 0;
+
+      if (zoomMultiplier * currentImageInfo.height - boxSize.height < 0) {
+        // if there is still blank space in the Y dimension, don't limit except to the opposite edge
+        maxY = (boxSize.height - zoomMultiplier * currentImageInfo.height) / 2;
+      } else {
+        maxY = (zoomMultiplier * currentImageInfo.height - boxSize.height) / 2;
+      }
+
+      return {
+        maxX: maxX,
+        maxY: maxY,
+        minX: -1 * maxX,
+        minY: -1 * maxY
+      };
+    } // Get image src types
+
+  }, {
+    key: "getSrcTypes",
+    value: function getSrcTypes() {
+      return [{
+        name: 'mainSrc',
+        keyEnding: "i".concat(this.keyCounter)
+      }, {
+        name: 'mainSrcThumbnail',
+        keyEnding: "t".concat(this.keyCounter)
+      }, {
+        name: 'nextSrc',
+        keyEnding: "i".concat(this.keyCounter + 1)
+      }, {
+        name: 'nextSrcThumbnail',
+        keyEnding: "t".concat(this.keyCounter + 1)
+      }, {
+        name: 'prevSrc',
+        keyEnding: "i".concat(this.keyCounter - 1)
+      }, {
+        name: 'prevSrcThumbnail',
+        keyEnding: "t".concat(this.keyCounter - 1)
+      }];
+    }
+    /**
+     * Get sizing when the image is scaled
+     */
+
+  }, {
+    key: "getZoomMultiplier",
+    value: function getZoomMultiplier() {
+      var zoomLevel = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.state.zoomLevel;
+      return Math.pow(ZOOM_RATIO, zoomLevel);
+    }
+    /**
+     * Get the size of the lightbox in pixels
+     */
+
+  }, {
+    key: "getLightboxRect",
+    value: function getLightboxRect() {
+      if (this.outerEl.current) {
+        return this.outerEl.current.getBoundingClientRect();
+      }
+
+      return {
+        width: getWindowWidth(),
+        height: getWindowHeight(),
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      };
+    }
+  }, {
+    key: "clearTimeout",
+    value: function (_clearTimeout) {
+      function clearTimeout(_x3) {
+        return _clearTimeout.apply(this, arguments);
+      }
+
+      clearTimeout.toString = function () {
+        return _clearTimeout.toString();
+      };
+
+      return clearTimeout;
+    }(function (id) {
+      this.timeouts = this.timeouts.filter(function (tid) {
+        return tid !== id;
+      });
+      clearTimeout(id);
+    }) // Change zoom level
+
+  }, {
+    key: "changeZoom",
+    value: function changeZoom(zoomLevel, clientX, clientY) {
+      // Ignore if zoom disabled
+      if (!this.props.enableZoom) {
+        return;
+      } // Constrain zoom level to the set bounds
+
+
+      var nextZoomLevel = Math.max(MIN_ZOOM_LEVEL, Math.min(MAX_ZOOM_LEVEL, zoomLevel)); // Ignore requests that don't change the zoom level
+
+      if (nextZoomLevel === this.state.zoomLevel) {
+        return;
+      }
+
+      if (nextZoomLevel === MIN_ZOOM_LEVEL) {
+        // Snap back to center if zoomed all the way out
+        this.setState({
+          zoomLevel: nextZoomLevel,
+          offsetX: 0,
+          offsetY: 0
+        });
+        return;
+      }
+
+      var imageBaseSize = this.getBestImageForType('mainSrc');
+
+      if (imageBaseSize === null) {
+        return;
+      }
+
+      var currentZoomMultiplier = this.getZoomMultiplier();
+      var nextZoomMultiplier = this.getZoomMultiplier(nextZoomLevel); // Default to the center of the image to zoom when no mouse position specified
+
+      var boxRect = this.getLightboxRect();
+      var pointerX = typeof clientX !== 'undefined' ? clientX - boxRect.left : boxRect.width / 2;
+      var pointerY = typeof clientY !== 'undefined' ? clientY - boxRect.top : boxRect.height / 2;
+      var currentImageOffsetX = (boxRect.width - imageBaseSize.width * currentZoomMultiplier) / 2;
+      var currentImageOffsetY = (boxRect.height - imageBaseSize.height * currentZoomMultiplier) / 2;
+      var currentImageRealOffsetX = currentImageOffsetX - this.state.offsetX;
+      var currentImageRealOffsetY = currentImageOffsetY - this.state.offsetY;
+      var currentPointerXRelativeToImage = (pointerX - currentImageRealOffsetX) / currentZoomMultiplier;
+      var currentPointerYRelativeToImage = (pointerY - currentImageRealOffsetY) / currentZoomMultiplier;
+      var nextImageRealOffsetX = pointerX - currentPointerXRelativeToImage * nextZoomMultiplier;
+      var nextImageRealOffsetY = pointerY - currentPointerYRelativeToImage * nextZoomMultiplier;
+      var nextImageOffsetX = (boxRect.width - imageBaseSize.width * nextZoomMultiplier) / 2;
+      var nextImageOffsetY = (boxRect.height - imageBaseSize.height * nextZoomMultiplier) / 2;
+      var nextOffsetX = nextImageOffsetX - nextImageRealOffsetX;
+      var nextOffsetY = nextImageOffsetY - nextImageRealOffsetY; // When zooming out, limit the offset so things don't get left askew
+
+      if (this.currentAction !== ACTION_PINCH) {
+        var maxOffsets = this.getMaxOffsets();
+
+        if (this.state.zoomLevel > nextZoomLevel) {
+          nextOffsetX = Math.max(maxOffsets.minX, Math.min(maxOffsets.maxX, nextOffsetX));
+          nextOffsetY = Math.max(maxOffsets.minY, Math.min(maxOffsets.maxY, nextOffsetY));
+        }
+      }
+
+      this.setState({
+        zoomLevel: nextZoomLevel,
+        offsetX: nextOffsetX,
+        offsetY: nextOffsetY
+      });
+    }
+  }, {
+    key: "closeIfClickInner",
+    value: function closeIfClickInner(event) {
+      if (!this.preventInnerClose && event.target.className.search(/\bril-inner\b/) > -1) {
+        this.requestClose(event);
+      }
+    }
+    /**
+     * Handle user keyboard actions
+     */
+
+  }, {
+    key: "handleKeyInput",
+    value: function handleKeyInput(event) {
+      event.stopPropagation(); // Ignore key input during animations
+
+      if (this.isAnimating()) {
+        return;
+      } // Allow slightly faster navigation through the images when user presses keys repeatedly
+
+
+      if (event.type === 'keyup') {
+        this.lastKeyDownTime -= this.props.keyRepeatKeyupBonus;
+        return;
+      }
+
+      var keyCode = event.which || event.keyCode; // Ignore key presses that happen too close to each other (when rapid fire key pressing or holding down the key)
+      // But allow it if it's a lightbox closing action
+
+      var currentTime = new Date();
+
+      if (currentTime.getTime() - this.lastKeyDownTime < this.props.keyRepeatLimit && keyCode !== KEYS.ESC) {
+        return;
+      }
+
+      this.lastKeyDownTime = currentTime.getTime();
+
+      switch (keyCode) {
+        // ESC key closes the lightbox
+        case KEYS.ESC:
+          event.preventDefault();
+          this.requestClose(event);
+          break;
+        // Left arrow key moves to previous image
+
+        case KEYS.LEFT_ARROW:
+          if (!this.props.prevSrc) {
+            return;
+          }
+
+          event.preventDefault();
+          this.keyPressed = true;
+          this.requestMovePrev(event);
+          break;
+        // Right arrow key moves to next image
+
+        case KEYS.RIGHT_ARROW:
+          if (!this.props.nextSrc) {
+            return;
+          }
+
+          event.preventDefault();
+          this.keyPressed = true;
+          this.requestMoveNext(event);
+          break;
+
+        default:
+      }
+    }
+    /**
+     * Handle a mouse wheel event over the lightbox container
+     */
+
+  }, {
+    key: "handleOuterMousewheel",
+    value: function handleOuterMousewheel(event) {
+      var _this7 = this;
+
+      // Prevent scrolling of the background
+      event.preventDefault();
+      event.stopPropagation();
+      var xThreshold = WHEEL_MOVE_X_THRESHOLD;
+      var actionDelay = 0;
+      var imageMoveDelay = 500;
+      this.clearTimeout(this.resetScrollTimeout);
+      this.resetScrollTimeout = this.setTimeout(function () {
+        _this7.scrollX = 0;
+        _this7.scrollY = 0;
+      }, 300); // Prevent rapid-fire zoom behavior
+
+      if (this.wheelActionTimeout !== null || this.isAnimating()) {
+        return;
+      }
+
+      if (Math.abs(event.deltaY) < Math.abs(event.deltaX)) {
+        // handle horizontal scrolls with image moves
+        this.scrollY = 0;
+        this.scrollX += event.deltaX;
+        var bigLeapX = xThreshold / 2; // If the scroll amount has accumulated sufficiently, or a large leap was taken
+
+        if (this.scrollX >= xThreshold || event.deltaX >= bigLeapX) {
+          // Scroll right moves to next
+          this.requestMoveNext(event);
+          actionDelay = imageMoveDelay;
+          this.scrollX = 0;
+        } else if (this.scrollX <= -1 * xThreshold || event.deltaX <= -1 * bigLeapX) {
+          // Scroll left moves to previous
+          this.requestMovePrev(event);
+          actionDelay = imageMoveDelay;
+          this.scrollX = 0;
+        }
+      } // Allow successive actions after the set delay
+
+
+      if (actionDelay !== 0) {
+        this.wheelActionTimeout = this.setTimeout(function () {
+          _this7.wheelActionTimeout = null;
+        }, actionDelay);
+      }
+    }
+  }, {
+    key: "handleImageMouseWheel",
+    value: function handleImageMouseWheel(event) {
+      event.preventDefault();
+      var yThreshold = WHEEL_MOVE_Y_THRESHOLD;
+
+      if (Math.abs(event.deltaY) >= Math.abs(event.deltaX)) {
+        event.stopPropagation(); // If the vertical scroll amount was large enough, perform a zoom
+
+        if (Math.abs(event.deltaY) < yThreshold) {
+          return;
+        }
+
+        this.scrollX = 0;
+        this.scrollY += event.deltaY;
+        this.changeZoom(this.state.zoomLevel - event.deltaY, event.clientX, event.clientY);
+      }
+    }
+    /**
+     * Handle a double click on the current image
+     */
+
+  }, {
+    key: "handleImageDoubleClick",
+    value: function handleImageDoubleClick(event) {
+      if (this.state.zoomLevel > MIN_ZOOM_LEVEL) {
+        // A double click when zoomed in zooms all the way out
+        this.changeZoom(MIN_ZOOM_LEVEL, event.clientX, event.clientY);
+      } else {
+        // A double click when zoomed all the way out zooms in
+        this.changeZoom(this.state.zoomLevel + ZOOM_BUTTON_INCREMENT_SIZE, event.clientX, event.clientY);
+      }
+    }
+  }, {
+    key: "shouldHandleEvent",
+    value: function shouldHandleEvent(source) {
+      if (this.eventsSource === source) {
+        return true;
+      }
+
+      if (this.eventsSource === SOURCE_ANY) {
+        this.eventsSource = source;
+        return true;
+      }
+
+      switch (source) {
+        case SOURCE_MOUSE:
+          return false;
+
+        case SOURCE_TOUCH:
+          this.eventsSource = SOURCE_TOUCH;
+          this.filterPointersBySource();
+          return true;
+
+        case SOURCE_POINTER:
+          if (this.eventsSource === SOURCE_MOUSE) {
+            this.eventsSource = SOURCE_POINTER;
+            this.filterPointersBySource();
+            return true;
+          }
+
+          return false;
+
+        default:
+          return false;
+      }
+    }
+  }, {
+    key: "addPointer",
+    value: function addPointer(pointer) {
+      this.pointerList.push(pointer);
+    }
+  }, {
+    key: "removePointer",
+    value: function removePointer(pointer) {
+      this.pointerList = this.pointerList.filter(function (_ref2) {
+        var id = _ref2.id;
+        return id !== pointer.id;
+      });
+    }
+  }, {
+    key: "filterPointersBySource",
+    value: function filterPointersBySource() {
+      var _this8 = this;
+
+      this.pointerList = this.pointerList.filter(function (_ref3) {
+        var source = _ref3.source;
+        return source === _this8.eventsSource;
+      });
+    }
+  }, {
+    key: "handleMouseDown",
+    value: function handleMouseDown(event) {
+      if (this.shouldHandleEvent(SOURCE_MOUSE) && ReactImageLightbox.isTargetMatchImage(event.target)) {
+        this.addPointer(ReactImageLightbox.parseMouseEvent(event));
+        this.multiPointerStart(event);
+      }
+    }
+  }, {
+    key: "handleMouseMove",
+    value: function handleMouseMove(event) {
+      if (this.shouldHandleEvent(SOURCE_MOUSE)) {
+        this.multiPointerMove(event, [ReactImageLightbox.parseMouseEvent(event)]);
+      }
+    }
+  }, {
+    key: "handleMouseUp",
+    value: function handleMouseUp(event) {
+      if (this.shouldHandleEvent(SOURCE_MOUSE)) {
+        this.removePointer(ReactImageLightbox.parseMouseEvent(event));
+        this.multiPointerEnd(event);
+      }
+    }
+  }, {
+    key: "handlePointerEvent",
+    value: function handlePointerEvent(event) {
+      if (this.shouldHandleEvent(SOURCE_POINTER)) {
+        switch (event.type) {
+          case 'pointerdown':
+            if (ReactImageLightbox.isTargetMatchImage(event.target)) {
+              this.addPointer(ReactImageLightbox.parsePointerEvent(event));
+              this.multiPointerStart(event);
+            }
+
+            break;
+
+          case 'pointermove':
+            this.multiPointerMove(event, [ReactImageLightbox.parsePointerEvent(event)]);
+            break;
+
+          case 'pointerup':
+          case 'pointercancel':
+            this.removePointer(ReactImageLightbox.parsePointerEvent(event));
+            this.multiPointerEnd(event);
+            break;
+
+          default:
+            break;
+        }
+      }
+    }
+  }, {
+    key: "handleTouchStart",
+    value: function handleTouchStart(event) {
+      var _this9 = this;
+
+      if (this.shouldHandleEvent(SOURCE_TOUCH) && ReactImageLightbox.isTargetMatchImage(event.target)) {
+        [].forEach.call(event.changedTouches, function (eventTouch) {
+          return _this9.addPointer(ReactImageLightbox.parseTouchPointer(eventTouch));
+        });
+        this.multiPointerStart(event);
+      }
+    }
+  }, {
+    key: "handleTouchMove",
+    value: function handleTouchMove(event) {
+      if (this.shouldHandleEvent(SOURCE_TOUCH)) {
+        this.multiPointerMove(event, [].map.call(event.changedTouches, function (eventTouch) {
+          return ReactImageLightbox.parseTouchPointer(eventTouch);
+        }));
+      }
+    }
+  }, {
+    key: "handleTouchEnd",
+    value: function handleTouchEnd(event) {
+      var _this10 = this;
+
+      if (this.shouldHandleEvent(SOURCE_TOUCH)) {
+        [].map.call(event.changedTouches, function (touch) {
+          return _this10.removePointer(ReactImageLightbox.parseTouchPointer(touch));
+        });
+        this.multiPointerEnd(event);
+      }
+    }
+  }, {
+    key: "decideMoveOrSwipe",
+    value: function decideMoveOrSwipe(pointer) {
+      if (this.state.zoomLevel <= MIN_ZOOM_LEVEL) {
+        this.handleSwipeStart(pointer);
+      } else {
+        this.handleMoveStart(pointer);
+      }
+    }
+  }, {
+    key: "multiPointerStart",
+    value: function multiPointerStart(event) {
+      this.handleEnd(null);
+
+      switch (this.pointerList.length) {
+        case 1:
+          {
+            event.preventDefault();
+            this.decideMoveOrSwipe(this.pointerList[0]);
+            break;
+          }
+
+        case 2:
+          {
+            event.preventDefault();
+            this.handlePinchStart(this.pointerList);
+            break;
+          }
+
+        default:
+          break;
+      }
+    }
+  }, {
+    key: "multiPointerMove",
+    value: function multiPointerMove(event, pointerList) {
+      switch (this.currentAction) {
+        case ACTION_MOVE:
+          {
+            event.preventDefault();
+            this.handleMove(pointerList[0]);
+            break;
+          }
+
+        case ACTION_SWIPE:
+          {
+            event.preventDefault();
+            this.handleSwipe(pointerList[0]);
+            break;
+          }
+
+        case ACTION_PINCH:
+          {
+            event.preventDefault();
+            this.handlePinch(pointerList);
+            break;
+          }
+
+        default:
+          break;
+      }
+    }
+  }, {
+    key: "multiPointerEnd",
+    value: function multiPointerEnd(event) {
+      if (this.currentAction !== ACTION_NONE) {
+        this.setPreventInnerClose();
+        this.handleEnd(event);
+      }
+
+      switch (this.pointerList.length) {
+        case 0:
+          {
+            this.eventsSource = SOURCE_ANY;
+            break;
+          }
+
+        case 1:
+          {
+            event.preventDefault();
+            this.decideMoveOrSwipe(this.pointerList[0]);
+            break;
+          }
+
+        case 2:
+          {
+            event.preventDefault();
+            this.handlePinchStart(this.pointerList);
+            break;
+          }
+
+        default:
+          break;
+      }
+    }
+  }, {
+    key: "handleEnd",
+    value: function handleEnd(event) {
+      switch (this.currentAction) {
+        case ACTION_MOVE:
+          this.handleMoveEnd(event);
+          break;
+
+        case ACTION_SWIPE:
+          this.handleSwipeEnd(event);
+          break;
+
+        case ACTION_PINCH:
+          this.handlePinchEnd(event);
+          break;
+
+        default:
+          break;
+      }
+    } // Handle move start over the lightbox container
+    // This happens:
+    // - On a mouseDown event
+    // - On a touchstart event
+
+  }, {
+    key: "handleMoveStart",
+    value: function handleMoveStart(_ref4) {
+      var clientX = _ref4.x,
+          clientY = _ref4.y;
+
+      if (!this.props.enableZoom) {
+        return;
+      }
+
+      this.currentAction = ACTION_MOVE;
+      this.moveStartX = clientX;
+      this.moveStartY = clientY;
+      this.moveStartOffsetX = this.state.offsetX;
+      this.moveStartOffsetY = this.state.offsetY;
+    } // Handle dragging over the lightbox container
+    // This happens:
+    // - After a mouseDown and before a mouseUp event
+    // - After a touchstart and before a touchend event
+
+  }, {
+    key: "handleMove",
+    value: function handleMove(_ref5) {
+      var clientX = _ref5.x,
+          clientY = _ref5.y;
+      var newOffsetX = this.moveStartX - clientX + this.moveStartOffsetX;
+      var newOffsetY = this.moveStartY - clientY + this.moveStartOffsetY;
+
+      if (this.state.offsetX !== newOffsetX || this.state.offsetY !== newOffsetY) {
+        this.setState({
+          offsetX: newOffsetX,
+          offsetY: newOffsetY
+        });
+      }
+    }
+  }, {
+    key: "handleMoveEnd",
+    value: function handleMoveEnd() {
+      var _this11 = this;
+
+      this.currentAction = ACTION_NONE;
+      this.moveStartX = 0;
+      this.moveStartY = 0;
+      this.moveStartOffsetX = 0;
+      this.moveStartOffsetY = 0; // Snap image back into frame if outside max offset range
+
+      var maxOffsets = this.getMaxOffsets();
+      var nextOffsetX = Math.max(maxOffsets.minX, Math.min(maxOffsets.maxX, this.state.offsetX));
+      var nextOffsetY = Math.max(maxOffsets.minY, Math.min(maxOffsets.maxY, this.state.offsetY));
+
+      if (nextOffsetX !== this.state.offsetX || nextOffsetY !== this.state.offsetY) {
+        this.setState({
+          offsetX: nextOffsetX,
+          offsetY: nextOffsetY,
+          shouldAnimate: true
+        });
+        this.setTimeout(function () {
+          _this11.setState({
+            shouldAnimate: false
+          });
+        }, this.props.animationDuration);
+      }
+    }
+  }, {
+    key: "handleSwipeStart",
+    value: function handleSwipeStart(_ref6) {
+      var clientX = _ref6.x,
+          clientY = _ref6.y;
+      this.currentAction = ACTION_SWIPE;
+      this.swipeStartX = clientX;
+      this.swipeStartY = clientY;
+      this.swipeEndX = clientX;
+      this.swipeEndY = clientY;
+    }
+  }, {
+    key: "handleSwipe",
+    value: function handleSwipe(_ref7) {
+      var clientX = _ref7.x,
+          clientY = _ref7.y;
+      this.swipeEndX = clientX;
+      this.swipeEndY = clientY;
+    }
+  }, {
+    key: "handleSwipeEnd",
+    value: function handleSwipeEnd(event) {
+      var xDiff = this.swipeEndX - this.swipeStartX;
+      var xDiffAbs = Math.abs(xDiff);
+      var yDiffAbs = Math.abs(this.swipeEndY - this.swipeStartY);
+      this.currentAction = ACTION_NONE;
+      this.swipeStartX = 0;
+      this.swipeStartY = 0;
+      this.swipeEndX = 0;
+      this.swipeEndY = 0;
+
+      if (!event || this.isAnimating() || xDiffAbs < yDiffAbs * 1.5) {
+        return;
+      }
+
+      if (xDiffAbs < MIN_SWIPE_DISTANCE) {
+        var boxRect = this.getLightboxRect();
+
+        if (xDiffAbs < boxRect.width / 4) {
+          return;
+        }
+      }
+
+      if (xDiff > 0 && this.props.prevSrc) {
+        event.preventDefault();
+        this.requestMovePrev();
+      } else if (xDiff < 0 && this.props.nextSrc) {
+        event.preventDefault();
+        this.requestMoveNext();
+      }
+    }
+  }, {
+    key: "calculatePinchDistance",
+    value: function calculatePinchDistance() {
+      var _ref8 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.pinchTouchList,
+          _ref9 = _slicedToArray(_ref8, 2),
+          a = _ref9[0],
+          b = _ref9[1];
+
+      return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));
+    }
+  }, {
+    key: "calculatePinchCenter",
+    value: function calculatePinchCenter() {
+      var _ref10 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.pinchTouchList,
+          _ref11 = _slicedToArray(_ref10, 2),
+          a = _ref11[0],
+          b = _ref11[1];
+
+      return {
+        x: a.x - (a.x - b.x) / 2,
+        y: a.y - (a.y - b.y) / 2
+      };
+    }
+  }, {
+    key: "handlePinchStart",
+    value: function handlePinchStart(pointerList) {
+      if (!this.props.enableZoom) {
+        return;
+      }
+
+      this.currentAction = ACTION_PINCH;
+      this.pinchTouchList = pointerList.map(function (_ref12) {
+        var id = _ref12.id,
+            x = _ref12.x,
+            y = _ref12.y;
+        return {
+          id: id,
+          x: x,
+          y: y
+        };
+      });
+      this.pinchDistance = this.calculatePinchDistance();
+    }
+  }, {
+    key: "handlePinch",
+    value: function handlePinch(pointerList) {
+      this.pinchTouchList = this.pinchTouchList.map(function (oldPointer) {
+        for (var i = 0; i < pointerList.length; i += 1) {
+          if (pointerList[i].id === oldPointer.id) {
+            return pointerList[i];
+          }
+        }
+
+        return oldPointer;
+      });
+      var newDistance = this.calculatePinchDistance();
+      var zoomLevel = this.state.zoomLevel + newDistance - this.pinchDistance;
+      this.pinchDistance = newDistance;
+
+      var _this$calculatePinchC = this.calculatePinchCenter(this.pinchTouchList),
+          clientX = _this$calculatePinchC.x,
+          clientY = _this$calculatePinchC.y;
+
+      this.changeZoom(zoomLevel, clientX, clientY);
+    }
+  }, {
+    key: "handlePinchEnd",
+    value: function handlePinchEnd() {
+      this.currentAction = ACTION_NONE;
+      this.pinchTouchList = null;
+      this.pinchDistance = 0;
+    } // Handle the window resize event
+
+  }, {
+    key: "handleWindowResize",
+    value: function handleWindowResize() {
+      this.clearTimeout(this.resizeTimeout);
+      this.resizeTimeout = this.setTimeout(this.forceUpdate.bind(this), 100);
+    }
+  }, {
+    key: "handleZoomInButtonClick",
+    value: function handleZoomInButtonClick() {
+      var nextZoomLevel = this.state.zoomLevel + ZOOM_BUTTON_INCREMENT_SIZE;
+      this.changeZoom(nextZoomLevel);
+
+      if (nextZoomLevel === MAX_ZOOM_LEVEL) {
+        this.zoomOutBtn.current.focus();
+      }
+    }
+  }, {
+    key: "handleZoomOutButtonClick",
+    value: function handleZoomOutButtonClick() {
+      var nextZoomLevel = this.state.zoomLevel - ZOOM_BUTTON_INCREMENT_SIZE;
+      this.changeZoom(nextZoomLevel);
+
+      if (nextZoomLevel === MIN_ZOOM_LEVEL) {
+        this.zoomInBtn.current.focus();
+      }
+    }
+  }, {
+    key: "handleCaptionMousewheel",
+    value: function handleCaptionMousewheel(event) {
+      event.stopPropagation();
+
+      if (!this.caption.current) {
+        return;
+      }
+
+      var _this$caption$current = this.caption.current.getBoundingClientRect(),
+          height = _this$caption$current.height;
+
+      var _this$caption$current2 = this.caption.current,
+          scrollHeight = _this$caption$current2.scrollHeight,
+          scrollTop = _this$caption$current2.scrollTop;
+
+      if (event.deltaY > 0 && height + scrollTop >= scrollHeight || event.deltaY < 0 && scrollTop <= 0) {
+        event.preventDefault();
+      }
+    } // Detach key and mouse input events
+
+  }, {
+    key: "isAnimating",
+    value: function isAnimating() {
+      return this.state.shouldAnimate || this.state.isClosing;
+    } // Check if image is loaded
+
+  }, {
+    key: "isImageLoaded",
+    value: function isImageLoaded(imageSrc) {
+      return imageSrc && imageSrc in this.imageCache && this.imageCache[imageSrc].loaded;
+    } // Load image from src and call callback with image width and height on load
+
+  }, {
+    key: "loadImage",
+    value: function loadImage(srcType, imageSrc, done) {
+      var _this12 = this;
+
+      // Return the image info if it is already cached
+      if (this.isImageLoaded(imageSrc)) {
+        this.setTimeout(function () {
+          done();
+        }, 1);
+        return;
+      }
+
+      var inMemoryImage = new global.Image();
+
+      if (this.props.imageCrossOrigin) {
+        inMemoryImage.crossOrigin = this.props.imageCrossOrigin;
+      }
+
+      inMemoryImage.onerror = function (errorEvent) {
+        _this12.props.onImageLoadError(imageSrc, srcType, errorEvent); // failed to load so set the state loadErrorStatus
+
+
+        _this12.setState(function (prevState) {
+          return {
+            loadErrorStatus: _objectSpread({}, prevState.loadErrorStatus, _defineProperty({}, srcType, true))
+          };
+        });
+
+        done(errorEvent);
+      };
+
+      inMemoryImage.onload = function () {
+        _this12.props.onImageLoad(imageSrc, srcType, inMemoryImage);
+
+        _this12.imageCache[imageSrc] = {
+          loaded: true,
+          width: inMemoryImage.width,
+          height: inMemoryImage.height
+        };
+        done();
+      };
+
+      inMemoryImage.src = imageSrc;
+    } // Load all images and their thumbnails
+
+  }, {
+    key: "loadAllImages",
+    value: function loadAllImages() {
+      var _this13 = this;
+
+      var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.props;
+
+      var generateLoadDoneCallback = function generateLoadDoneCallback(srcType, imageSrc) {
+        return function (err) {
+          // Give up showing image on error
+          if (err) {
+            return;
+          } // Don't rerender if the src is not the same as when the load started
+          // or if the component has unmounted
+
+
+          if (_this13.props[srcType] !== imageSrc || _this13.didUnmount) {
+            return;
+          } // Force rerender with the new image
+
+
+          _this13.forceUpdate();
+        };
+      }; // Load the images
+
+
+      this.getSrcTypes().forEach(function (srcType) {
+        var type = srcType.name; // there is no error when we try to load it initially
+
+        if (props[type] && _this13.state.loadErrorStatus[type]) {
+          _this13.setState(function (prevState) {
+            return {
+              loadErrorStatus: _objectSpread({}, prevState.loadErrorStatus, _defineProperty({}, type, false))
+            };
+          });
+        } // Load unloaded images
+
+
+        if (props[type] && !_this13.isImageLoaded(props[type])) {
+          _this13.loadImage(type, props[type], generateLoadDoneCallback(type, props[type]));
+        }
+      });
+    } // Request that the lightbox be closed
+
+  }, {
+    key: "requestClose",
+    value: function requestClose(event) {
+      var _this14 = this;
+
+      // Call the parent close request
+      var closeLightbox = function closeLightbox() {
+        return _this14.props.onCloseRequest(event);
+      };
+
+      if (this.props.animationDisabled || event.type === 'keydown' && !this.props.animationOnKeyInput) {
+        // No animation
+        closeLightbox();
+        return;
+      } // With animation
+      // Start closing animation
+
+
+      this.setState({
+        isClosing: true
+      }); // Perform the actual closing at the end of the animation
+
+      this.setTimeout(closeLightbox, this.props.animationDuration);
+    }
+  }, {
+    key: "requestMove",
+    value: function requestMove(direction, event) {
+      var _this15 = this;
+
+      // Reset the zoom level on image move
+      var nextState = {
+        zoomLevel: MIN_ZOOM_LEVEL,
+        offsetX: 0,
+        offsetY: 0
+      }; // Enable animated states
+
+      if (!this.props.animationDisabled && (!this.keyPressed || this.props.animationOnKeyInput)) {
+        nextState.shouldAnimate = true;
+        this.setTimeout(function () {
+          return _this15.setState({
+            shouldAnimate: false
+          });
+        }, this.props.animationDuration);
+      }
+
+      this.keyPressed = false;
+      this.moveRequested = true;
+
+      if (direction === 'prev') {
+        this.keyCounter -= 1;
+        this.setState(nextState);
+        this.props.onMovePrevRequest(event);
+      } else {
+        this.keyCounter += 1;
+        this.setState(nextState);
+        this.props.onMoveNextRequest(event);
+      }
+    } // Request to transition to the next image
+
+  }, {
+    key: "requestMoveNext",
+    value: function requestMoveNext(event) {
+      this.requestMove('next', event);
+    } // Request to transition to the previous image
+
+  }, {
+    key: "requestMovePrev",
+    value: function requestMovePrev(event) {
+      this.requestMove('prev', event);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this16 = this;
+
+      var _this$props = this.props,
+          animationDisabled = _this$props.animationDisabled,
+          animationDuration = _this$props.animationDuration,
+          clickOutsideToClose = _this$props.clickOutsideToClose,
+          discourageDownloads = _this$props.discourageDownloads,
+          enableZoom = _this$props.enableZoom,
+          imageTitle = _this$props.imageTitle,
+          nextSrc = _this$props.nextSrc,
+          prevSrc = _this$props.prevSrc,
+          toolbarButtons = _this$props.toolbarButtons,
+          reactModalStyle = _this$props.reactModalStyle,
+          _onAfterOpen = _this$props.onAfterOpen,
+          imageCrossOrigin = _this$props.imageCrossOrigin,
+          reactModalProps = _this$props.reactModalProps;
+      var _this$state = this.state,
+          zoomLevel = _this$state.zoomLevel,
+          offsetX = _this$state.offsetX,
+          offsetY = _this$state.offsetY,
+          isClosing = _this$state.isClosing,
+          loadErrorStatus = _this$state.loadErrorStatus;
+      var boxSize = this.getLightboxRect();
+      var transitionStyle = {}; // Transition settings for sliding animations
+
+      if (!animationDisabled && this.isAnimating()) {
+        transitionStyle = _objectSpread({}, transitionStyle, {
+          transition: "transform ".concat(animationDuration, "ms")
+        });
+      } // Key endings to differentiate between images with the same src
+
+
+      var keyEndings = {};
+      this.getSrcTypes().forEach(function (_ref13) {
+        var name = _ref13.name,
+            keyEnding = _ref13.keyEnding;
+        keyEndings[name] = keyEnding;
+      }); // Images to be displayed
+
+      var images = [];
+
+      var addImage = function addImage(srcType, imageClass, transforms) {
+        // Ignore types that have no source defined for their full size image
+        if (!_this16.props[srcType]) {
+          return;
+        }
+
+        var bestImageInfo = _this16.getBestImageForType(srcType);
+
+        var imageStyle = _objectSpread({}, transitionStyle, ReactImageLightbox.getTransform(_objectSpread({}, transforms, bestImageInfo)));
+
+        if (zoomLevel > MIN_ZOOM_LEVEL) {
+          imageStyle.cursor = 'move';
+        } // support IE 9 and 11
+
+
+        var hasTrueValue = function hasTrueValue(object) {
+          return Object.keys(object).some(function (key) {
+            return object[key];
+          });
+        }; // when error on one of the loads then push custom error stuff
+
+
+        if (bestImageInfo === null && hasTrueValue(loadErrorStatus)) {
+          images.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "".concat(imageClass, " ril__image ril-errored"),
+            style: imageStyle,
+            key: _this16.props[srcType] + keyEndings[srcType]
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "ril__errorContainer"
+          }, _this16.props.imageLoadErrorMessage)));
+          return;
+        }
+
+        if (bestImageInfo === null) {
+          var loadingIcon = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "ril-loading-circle ril__loadingCircle ril__loadingContainer__icon"
+          }, _toConsumableArray(new Array(12)).map(function (_, index) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+              // eslint-disable-next-line react/no-array-index-key
+              key: index,
+              className: "ril-loading-circle-point ril__loadingCirclePoint"
+            });
+          })); // Fall back to loading icon if the thumbnail has not been loaded
+
+          images.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "".concat(imageClass, " ril__image ril-not-loaded"),
+            style: imageStyle,
+            key: _this16.props[srcType] + keyEndings[srcType]
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "ril__loadingContainer"
+          }, loadingIcon)));
+          return;
+        }
+
+        var imageSrc = bestImageInfo.src;
+
+        if (discourageDownloads) {
+          imageStyle.backgroundImage = "url('".concat(imageSrc, "')");
+          images.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "".concat(imageClass, " ril__image ril__imageDiscourager"),
+            onDoubleClick: _this16.handleImageDoubleClick,
+            onWheel: _this16.handleImageMouseWheel,
+            style: imageStyle,
+            key: imageSrc + keyEndings[srcType]
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "ril-download-blocker ril__downloadBlocker"
+          })));
+        } else {
+          images.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", _extends({}, imageCrossOrigin ? {
+            crossOrigin: imageCrossOrigin
+          } : {}, {
+            className: "".concat(imageClass, " ril__image"),
+            onDoubleClick: _this16.handleImageDoubleClick,
+            onWheel: _this16.handleImageMouseWheel,
+            onDragStart: function onDragStart(e) {
+              return e.preventDefault();
+            },
+            style: imageStyle,
+            src: imageSrc,
+            key: imageSrc + keyEndings[srcType],
+            alt: typeof imageTitle === 'string' ? imageTitle : translate('Image'),
+            draggable: false
+          })));
+        }
+      };
+
+      var zoomMultiplier = this.getZoomMultiplier(); // Next Image (displayed on the right)
+
+      addImage('nextSrc', 'ril-image-next ril__imageNext', {
+        x: boxSize.width
+      }); // Main Image
+
+      addImage('mainSrc', 'ril-image-current', {
+        x: -1 * offsetX,
+        y: -1 * offsetY,
+        zoom: zoomMultiplier
+      }); // Previous Image (displayed on the left)
+
+      addImage('prevSrc', 'ril-image-prev ril__imagePrev', {
+        x: -1 * boxSize.width
+      });
+      var modalStyle = {
+        overlay: _objectSpread({
+          zIndex: 1000,
+          backgroundColor: 'transparent'
+        }, reactModalStyle.overlay),
+        content: _objectSpread({
+          backgroundColor: 'transparent',
+          overflow: 'hidden',
+          // Needed, otherwise keyboard shortcuts scroll the page
+          border: 'none',
+          borderRadius: 0,
+          padding: 0,
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0
+        }, reactModalStyle.content)
+      };
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_modal__WEBPACK_IMPORTED_MODULE_2___default.a, _extends({
+        isOpen: true,
+        onRequestClose: clickOutsideToClose ? this.requestClose : undefined,
+        onAfterOpen: function onAfterOpen() {
+          // Focus on the div with key handlers
+          if (_this16.outerEl.current) {
+            _this16.outerEl.current.focus();
+          }
+
+          _onAfterOpen();
+        },
+        style: modalStyle,
+        contentLabel: translate('Lightbox'),
+        appElement: typeof global.window !== 'undefined' ? global.window.document.body : undefined
+      }, reactModalProps), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        // eslint-disable-line jsx-a11y/no-static-element-interactions
+        // Floating modal with closing animations
+        className: "ril-outer ril__outer ril__outerAnimating ".concat(this.props.wrapperClassName, " ").concat(isClosing ? 'ril-closing ril__outerClosing' : ''),
+        style: {
+          transition: "opacity ".concat(animationDuration, "ms"),
+          animationDuration: "".concat(animationDuration, "ms"),
+          animationDirection: isClosing ? 'normal' : 'reverse'
+        },
+        ref: this.outerEl,
+        onWheel: this.handleOuterMousewheel,
+        onMouseMove: this.handleMouseMove,
+        onMouseDown: this.handleMouseDown,
+        onTouchStart: this.handleTouchStart,
+        onTouchMove: this.handleTouchMove,
+        tabIndex: "-1" // Enables key handlers on div
+        ,
+        onKeyDown: this.handleKeyInput,
+        onKeyUp: this.handleKeyInput
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        // eslint-disable-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events
+        // Image holder
+        className: "ril-inner ril__inner",
+        onClick: clickOutsideToClose ? this.closeIfClickInner : undefined
+      }, images), prevSrc && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        // Move to previous image button
+        type: "button",
+        className: "ril-prev-button ril__navButtons ril__navButtonPrev",
+        key: "prev",
+        "aria-label": this.props.prevLabel,
+        onClick: !this.isAnimating() ? this.requestMovePrev : undefined // Ignore clicks during animation
+
+      }), nextSrc && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        // Move to next image button
+        type: "button",
+        className: "ril-next-button ril__navButtons ril__navButtonNext",
+        key: "next",
+        "aria-label": this.props.nextLabel,
+        onClick: !this.isAnimating() ? this.requestMoveNext : undefined // Ignore clicks during animation
+
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        // Lightbox toolbar
+        className: "ril-toolbar ril__toolbar"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "ril-toolbar-left ril__toolbarSide ril__toolbarLeftSide"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "ril-toolbar__item ril__toolbarItem"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "ril-toolbar__item__child ril__toolbarItemChild"
+      }, imageTitle))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "ril-toolbar-right ril__toolbarSide ril__toolbarRightSide"
+      }, toolbarButtons && toolbarButtons.map(function (button, i) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          key: "button_".concat(i + 1),
+          className: "ril-toolbar__item ril__toolbarItem"
+        }, button);
+      }), enableZoom && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "ril-toolbar__item ril__toolbarItem"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        // Lightbox zoom in button
+        type: "button",
+        key: "zoom-in",
+        "aria-label": this.props.zoomInLabel,
+        className: ['ril-zoom-in', 'ril__toolbarItemChild', 'ril__builtinButton', 'ril__zoomInButton'].concat(_toConsumableArray(zoomLevel === MAX_ZOOM_LEVEL ? ['ril__builtinButtonDisabled'] : [])).join(' '),
+        ref: this.zoomInBtn,
+        disabled: this.isAnimating() || zoomLevel === MAX_ZOOM_LEVEL,
+        onClick: !this.isAnimating() && zoomLevel !== MAX_ZOOM_LEVEL ? this.handleZoomInButtonClick : undefined
+      })), enableZoom && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "ril-toolbar__item ril__toolbarItem"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        // Lightbox zoom out button
+        type: "button",
+        key: "zoom-out",
+        "aria-label": this.props.zoomOutLabel,
+        className: ['ril-zoom-out', 'ril__toolbarItemChild', 'ril__builtinButton', 'ril__zoomOutButton'].concat(_toConsumableArray(zoomLevel === MIN_ZOOM_LEVEL ? ['ril__builtinButtonDisabled'] : [])).join(' '),
+        ref: this.zoomOutBtn,
+        disabled: this.isAnimating() || zoomLevel === MIN_ZOOM_LEVEL,
+        onClick: !this.isAnimating() && zoomLevel !== MIN_ZOOM_LEVEL ? this.handleZoomOutButtonClick : undefined
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "ril-toolbar__item ril__toolbarItem"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        // Lightbox close button
+        type: "button",
+        key: "close",
+        "aria-label": this.props.closeLabel,
+        className: "ril-close ril-toolbar__item__child ril__toolbarItemChild ril__builtinButton ril__closeButton",
+        onClick: !this.isAnimating() ? this.requestClose : undefined // Ignore clicks during animation
+
+      })))), this.props.imageCaption && // eslint-disable-next-line jsx-a11y/no-static-element-interactions
+      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        // Image caption
+        onWheel: this.handleCaptionMousewheel,
+        onMouseDown: function onMouseDown(event) {
+          return event.stopPropagation();
+        },
+        className: "ril-caption ril__caption",
+        ref: this.caption
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "ril-caption-content ril__captionContent"
+      }, this.props.imageCaption))));
+    }
+  }]);
+
+  return ReactImageLightbox;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+ReactImageLightbox.propTypes = {
+  //-----------------------------
+  // Image sources
+  //-----------------------------
+  // Main display image url
+  mainSrc: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
+  // eslint-disable-line react/no-unused-prop-types
+  // Previous display image url (displayed to the left)
+  // If left undefined, movePrev actions will not be performed, and the button not displayed
+  prevSrc: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  // Next display image url (displayed to the right)
+  // If left undefined, moveNext actions will not be performed, and the button not displayed
+  nextSrc: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  //-----------------------------
+  // Image thumbnail sources
+  //-----------------------------
+  // Thumbnail image url corresponding to props.mainSrc
+  mainSrcThumbnail: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  // eslint-disable-line react/no-unused-prop-types
+  // Thumbnail image url corresponding to props.prevSrc
+  prevSrcThumbnail: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  // eslint-disable-line react/no-unused-prop-types
+  // Thumbnail image url corresponding to props.nextSrc
+  nextSrcThumbnail: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  // eslint-disable-line react/no-unused-prop-types
+  //-----------------------------
+  // Event Handlers
+  //-----------------------------
+  // Close window event
+  // Should change the parent state such that the lightbox is not rendered
+  onCloseRequest: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
+  // Move to previous image event
+  // Should change the parent state such that props.prevSrc becomes props.mainSrc,
+  //  props.mainSrc becomes props.nextSrc, etc.
+  onMovePrevRequest: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  // Move to next image event
+  // Should change the parent state such that props.nextSrc becomes props.mainSrc,
+  //  props.mainSrc becomes props.prevSrc, etc.
+  onMoveNextRequest: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  // Called when an image fails to load
+  // (imageSrc: string, srcType: string, errorEvent: object): void
+  onImageLoadError: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  // Called when image successfully loads
+  onImageLoad: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  // Open window event
+  onAfterOpen: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  //-----------------------------
+  // Download discouragement settings
+  //-----------------------------
+  // Enable download discouragement (prevents [right-click -> Save Image As...])
+  discourageDownloads: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  //-----------------------------
+  // Animation settings
+  //-----------------------------
+  // Disable all animation
+  animationDisabled: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  // Disable animation on actions performed with keyboard shortcuts
+  animationOnKeyInput: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  // Animation duration (ms)
+  animationDuration: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+  //-----------------------------
+  // Keyboard shortcut settings
+  //-----------------------------
+  // Required interval of time (ms) between key actions
+  // (prevents excessively fast navigation of images)
+  keyRepeatLimit: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+  // Amount of time (ms) restored after each keyup
+  // (makes rapid key presses slightly faster than holding down the key to navigate images)
+  keyRepeatKeyupBonus: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+  //-----------------------------
+  // Image info
+  //-----------------------------
+  // Image title
+  imageTitle: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
+  // Image caption
+  imageCaption: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
+  // Optional crossOrigin attribute
+  imageCrossOrigin: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  //-----------------------------
+  // Lightbox style
+  //-----------------------------
+  // Set z-index style, etc., for the parent react-modal (format: https://github.com/reactjs/react-modal#styles )
+  reactModalStyle: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({}),
+  // Padding (px) between the edge of the window and the lightbox
+  imagePadding: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+  wrapperClassName: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  //-----------------------------
+  // Other
+  //-----------------------------
+  // Array of custom toolbar buttons
+  toolbarButtons: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node),
+  // When true, clicks outside of the image close the lightbox
+  clickOutsideToClose: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  // Set to false to disable zoom functionality and hide zoom buttons
+  enableZoom: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  // Override props set on react-modal (https://github.com/reactjs/react-modal)
+  reactModalProps: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({}),
+  // Aria-labels
+  nextLabel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  prevLabel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  zoomInLabel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  zoomOutLabel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  closeLabel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  imageLoadErrorMessage: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node
+};
+ReactImageLightbox.defaultProps = {
+  imageTitle: null,
+  imageCaption: null,
+  toolbarButtons: null,
+  reactModalProps: {},
+  animationDisabled: false,
+  animationDuration: 300,
+  animationOnKeyInput: false,
+  clickOutsideToClose: true,
+  closeLabel: 'Close lightbox',
+  discourageDownloads: false,
+  enableZoom: true,
+  imagePadding: 10,
+  imageCrossOrigin: null,
+  keyRepeatKeyupBonus: 40,
+  keyRepeatLimit: 180,
+  mainSrcThumbnail: null,
+  nextLabel: 'Next image',
+  nextSrc: null,
+  nextSrcThumbnail: null,
+  onAfterOpen: function onAfterOpen() {},
+  onImageLoadError: function onImageLoadError() {},
+  onImageLoad: function onImageLoad() {},
+  onMoveNextRequest: function onMoveNextRequest() {},
+  onMovePrevRequest: function onMovePrevRequest() {},
+  prevLabel: 'Previous image',
+  prevSrc: null,
+  prevSrcThumbnail: null,
+  reactModalStyle: {},
+  wrapperClassName: '',
+  zoomInLabel: 'Zoom in',
+  zoomOutLabel: 'Zoom out',
+  imageLoadErrorMessage: 'This image failed to load'
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ReactImageLightbox);
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/react-image-lightbox/style.css":
+/*!*****************************************************!*\
+  !*** ./node_modules/react-image-lightbox/style.css ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../css-loader??ref--6-1!../postcss-loader/src??ref--6-2!./style.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/react-image-lightbox/style.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/react-is/cjs/react-is.development.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-is/cjs/react-is.development.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/** @license React v16.11.0
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+if (true) {
+  (function() {
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+// nor polyfill, then a plain number is used for performance.
+var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+// (unstable) APIs that have been removed. Can we remove the symbols?
+
+var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
+var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
+
+function isValidElementType(type) {
+  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE);
+}
+
+/**
+ * Forked from fbjs/warning:
+ * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js
+ *
+ * Only change is we use console.warn instead of console.error,
+ * and do nothing when 'console' is not supported.
+ * This really simplifies the code.
+ * ---
+ * Similar to invariant but only logs a warning if the condition is not met.
+ * This can be used to log issues in development environments in critical
+ * paths. Removing the logging code for production environments will keep the
+ * same logic and follow the same code paths.
+ */
+var lowPriorityWarningWithoutStack = function () {};
+
+{
+  var printWarning = function (format) {
+    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      args[_key - 1] = arguments[_key];
+    }
+
+    var argIndex = 0;
+    var message = 'Warning: ' + format.replace(/%s/g, function () {
+      return args[argIndex++];
+    });
+
+    if (typeof console !== 'undefined') {
+      console.warn(message);
+    }
+
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+
+  lowPriorityWarningWithoutStack = function (condition, format) {
+    if (format === undefined) {
+      throw new Error('`lowPriorityWarningWithoutStack(condition, format, ...args)` requires a warning ' + 'message argument');
+    }
+
+    if (!condition) {
+      for (var _len2 = arguments.length, args = new Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+        args[_key2 - 2] = arguments[_key2];
+      }
+
+      printWarning.apply(void 0, [format].concat(args));
+    }
+  };
+}
+
+var lowPriorityWarningWithoutStack$1 = lowPriorityWarningWithoutStack;
+
+function typeOf(object) {
+  if (typeof object === 'object' && object !== null) {
+    var $$typeof = object.$$typeof;
+
+    switch ($$typeof) {
+      case REACT_ELEMENT_TYPE:
+        var type = object.type;
+
+        switch (type) {
+          case REACT_ASYNC_MODE_TYPE:
+          case REACT_CONCURRENT_MODE_TYPE:
+          case REACT_FRAGMENT_TYPE:
+          case REACT_PROFILER_TYPE:
+          case REACT_STRICT_MODE_TYPE:
+          case REACT_SUSPENSE_TYPE:
+            return type;
+
+          default:
+            var $$typeofType = type && type.$$typeof;
+
+            switch ($$typeofType) {
+              case REACT_CONTEXT_TYPE:
+              case REACT_FORWARD_REF_TYPE:
+              case REACT_PROVIDER_TYPE:
+                return $$typeofType;
+
+              default:
+                return $$typeof;
+            }
+
+        }
+
+      case REACT_LAZY_TYPE:
+      case REACT_MEMO_TYPE:
+      case REACT_PORTAL_TYPE:
+        return $$typeof;
+    }
+  }
+
+  return undefined;
+} // AsyncMode is deprecated along with isAsyncMode
+
+var AsyncMode = REACT_ASYNC_MODE_TYPE;
+var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+var ContextConsumer = REACT_CONTEXT_TYPE;
+var ContextProvider = REACT_PROVIDER_TYPE;
+var Element = REACT_ELEMENT_TYPE;
+var ForwardRef = REACT_FORWARD_REF_TYPE;
+var Fragment = REACT_FRAGMENT_TYPE;
+var Lazy = REACT_LAZY_TYPE;
+var Memo = REACT_MEMO_TYPE;
+var Portal = REACT_PORTAL_TYPE;
+var Profiler = REACT_PROFILER_TYPE;
+var StrictMode = REACT_STRICT_MODE_TYPE;
+var Suspense = REACT_SUSPENSE_TYPE;
+var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+
+function isAsyncMode(object) {
+  {
+    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+      hasWarnedAboutDeprecatedIsAsyncMode = true;
+      lowPriorityWarningWithoutStack$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+    }
+  }
+
+  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+}
+function isConcurrentMode(object) {
+  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+}
+function isContextConsumer(object) {
+  return typeOf(object) === REACT_CONTEXT_TYPE;
+}
+function isContextProvider(object) {
+  return typeOf(object) === REACT_PROVIDER_TYPE;
+}
+function isElement(object) {
+  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+}
+function isForwardRef(object) {
+  return typeOf(object) === REACT_FORWARD_REF_TYPE;
+}
+function isFragment(object) {
+  return typeOf(object) === REACT_FRAGMENT_TYPE;
+}
+function isLazy(object) {
+  return typeOf(object) === REACT_LAZY_TYPE;
+}
+function isMemo(object) {
+  return typeOf(object) === REACT_MEMO_TYPE;
+}
+function isPortal(object) {
+  return typeOf(object) === REACT_PORTAL_TYPE;
+}
+function isProfiler(object) {
+  return typeOf(object) === REACT_PROFILER_TYPE;
+}
+function isStrictMode(object) {
+  return typeOf(object) === REACT_STRICT_MODE_TYPE;
+}
+function isSuspense(object) {
+  return typeOf(object) === REACT_SUSPENSE_TYPE;
+}
+
+exports.typeOf = typeOf;
+exports.AsyncMode = AsyncMode;
+exports.ConcurrentMode = ConcurrentMode;
+exports.ContextConsumer = ContextConsumer;
+exports.ContextProvider = ContextProvider;
+exports.Element = Element;
+exports.ForwardRef = ForwardRef;
+exports.Fragment = Fragment;
+exports.Lazy = Lazy;
+exports.Memo = Memo;
+exports.Portal = Portal;
+exports.Profiler = Profiler;
+exports.StrictMode = StrictMode;
+exports.Suspense = Suspense;
+exports.isValidElementType = isValidElementType;
+exports.isAsyncMode = isAsyncMode;
+exports.isConcurrentMode = isConcurrentMode;
+exports.isContextConsumer = isContextConsumer;
+exports.isContextProvider = isContextProvider;
+exports.isElement = isElement;
+exports.isForwardRef = isForwardRef;
+exports.isFragment = isFragment;
+exports.isLazy = isLazy;
+exports.isMemo = isMemo;
+exports.isPortal = isPortal;
+exports.isProfiler = isProfiler;
+exports.isStrictMode = isStrictMode;
+exports.isSuspense = isSuspense;
+  })();
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/react-is/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/react-is/index.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js ***!
+  \****************************************************************************/
+/*! exports provided: polyfill */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "polyfill", function() { return polyfill; });
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+function componentWillMount() {
+  // Call this.constructor.gDSFP to support sub-classes.
+  var state = this.constructor.getDerivedStateFromProps(this.props, this.state);
+  if (state !== null && state !== undefined) {
+    this.setState(state);
+  }
+}
+
+function componentWillReceiveProps(nextProps) {
+  // Call this.constructor.gDSFP to support sub-classes.
+  // Use the setState() updater to ensure state isn't stale in certain edge cases.
+  function updater(prevState) {
+    var state = this.constructor.getDerivedStateFromProps(nextProps, prevState);
+    return state !== null && state !== undefined ? state : null;
+  }
+  // Binding "this" is important for shallow renderer support.
+  this.setState(updater.bind(this));
+}
+
+function componentWillUpdate(nextProps, nextState) {
+  try {
+    var prevProps = this.props;
+    var prevState = this.state;
+    this.props = nextProps;
+    this.state = nextState;
+    this.__reactInternalSnapshotFlag = true;
+    this.__reactInternalSnapshot = this.getSnapshotBeforeUpdate(
+      prevProps,
+      prevState
+    );
+  } finally {
+    this.props = prevProps;
+    this.state = prevState;
+  }
+}
+
+// React may warn about cWM/cWRP/cWU methods being deprecated.
+// Add a flag to suppress these warnings for this special case.
+componentWillMount.__suppressDeprecationWarning = true;
+componentWillReceiveProps.__suppressDeprecationWarning = true;
+componentWillUpdate.__suppressDeprecationWarning = true;
+
+function polyfill(Component) {
+  var prototype = Component.prototype;
+
+  if (!prototype || !prototype.isReactComponent) {
+    throw new Error('Can only polyfill class components');
+  }
+
+  if (
+    typeof Component.getDerivedStateFromProps !== 'function' &&
+    typeof prototype.getSnapshotBeforeUpdate !== 'function'
+  ) {
+    return Component;
+  }
+
+  // If new component APIs are defined, "unsafe" lifecycles won't be called.
+  // Error if any of these lifecycles are present,
+  // Because they would work differently between older and newer (16.3+) versions of React.
+  var foundWillMountName = null;
+  var foundWillReceivePropsName = null;
+  var foundWillUpdateName = null;
+  if (typeof prototype.componentWillMount === 'function') {
+    foundWillMountName = 'componentWillMount';
+  } else if (typeof prototype.UNSAFE_componentWillMount === 'function') {
+    foundWillMountName = 'UNSAFE_componentWillMount';
+  }
+  if (typeof prototype.componentWillReceiveProps === 'function') {
+    foundWillReceivePropsName = 'componentWillReceiveProps';
+  } else if (typeof prototype.UNSAFE_componentWillReceiveProps === 'function') {
+    foundWillReceivePropsName = 'UNSAFE_componentWillReceiveProps';
+  }
+  if (typeof prototype.componentWillUpdate === 'function') {
+    foundWillUpdateName = 'componentWillUpdate';
+  } else if (typeof prototype.UNSAFE_componentWillUpdate === 'function') {
+    foundWillUpdateName = 'UNSAFE_componentWillUpdate';
+  }
+  if (
+    foundWillMountName !== null ||
+    foundWillReceivePropsName !== null ||
+    foundWillUpdateName !== null
+  ) {
+    var componentName = Component.displayName || Component.name;
+    var newApiName =
+      typeof Component.getDerivedStateFromProps === 'function'
+        ? 'getDerivedStateFromProps()'
+        : 'getSnapshotBeforeUpdate()';
+
+    throw Error(
+      'Unsafe legacy lifecycles will not be called for components using new component APIs.\n\n' +
+        componentName +
+        ' uses ' +
+        newApiName +
+        ' but also contains the following legacy lifecycles:' +
+        (foundWillMountName !== null ? '\n  ' + foundWillMountName : '') +
+        (foundWillReceivePropsName !== null
+          ? '\n  ' + foundWillReceivePropsName
+          : '') +
+        (foundWillUpdateName !== null ? '\n  ' + foundWillUpdateName : '') +
+        '\n\nThe above lifecycles should be removed. Learn more about this warning here:\n' +
+        'https://fb.me/react-async-component-lifecycle-hooks'
+    );
+  }
+
+  // React <= 16.2 does not support static getDerivedStateFromProps.
+  // As a workaround, use cWM and cWRP to invoke the new static lifecycle.
+  // Newer versions of React will ignore these lifecycles if gDSFP exists.
+  if (typeof Component.getDerivedStateFromProps === 'function') {
+    prototype.componentWillMount = componentWillMount;
+    prototype.componentWillReceiveProps = componentWillReceiveProps;
+  }
+
+  // React <= 16.2 does not support getSnapshotBeforeUpdate.
+  // As a workaround, use cWU to invoke the new lifecycle.
+  // Newer versions of React will ignore that lifecycle if gSBU exists.
+  if (typeof prototype.getSnapshotBeforeUpdate === 'function') {
+    if (typeof prototype.componentDidUpdate !== 'function') {
+      throw new Error(
+        'Cannot polyfill getSnapshotBeforeUpdate() for components that do not define componentDidUpdate() on the prototype'
+      );
+    }
+
+    prototype.componentWillUpdate = componentWillUpdate;
+
+    var componentDidUpdate = prototype.componentDidUpdate;
+
+    prototype.componentDidUpdate = function componentDidUpdatePolyfill(
+      prevProps,
+      prevState,
+      maybeSnapshot
+    ) {
+      // 16.3+ will not execute our will-update method;
+      // It will pass a snapshot value to did-update though.
+      // Older versions will require our polyfilled will-update value.
+      // We need to handle both cases, but can't just check for the presence of "maybeSnapshot",
+      // Because for <= 15.x versions this might be a "prevContext" object.
+      // We also can't just check "__reactInternalSnapshot",
+      // Because get-snapshot might return a falsy value.
+      // So check for the explicit __reactInternalSnapshotFlag flag to determine behavior.
+      var snapshot = this.__reactInternalSnapshotFlag
+        ? this.__reactInternalSnapshot
+        : maybeSnapshot;
+
+      componentDidUpdate.call(this, prevProps, prevState, snapshot);
+    };
+  }
+
+  return Component;
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/components/Modal.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-modal/lib/components/Modal.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.bodyOpenClassName = exports.portalClassName = undefined;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _ModalPortal = __webpack_require__(/*! ./ModalPortal */ "./node_modules/react-modal/lib/components/ModalPortal.js");
+
+var _ModalPortal2 = _interopRequireDefault(_ModalPortal);
+
+var _ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ "./node_modules/react-modal/lib/helpers/ariaAppHider.js");
+
+var ariaAppHider = _interopRequireWildcard(_ariaAppHider);
+
+var _safeHTMLElement = __webpack_require__(/*! ../helpers/safeHTMLElement */ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js");
+
+var _safeHTMLElement2 = _interopRequireDefault(_safeHTMLElement);
+
+var _reactLifecyclesCompat = __webpack_require__(/*! react-lifecycles-compat */ "./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js");
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var portalClassName = exports.portalClassName = "ReactModalPortal";
+var bodyOpenClassName = exports.bodyOpenClassName = "ReactModal__Body--open";
+
+var isReact16 = _reactDom2.default.createPortal !== undefined;
+
+var getCreatePortal = function getCreatePortal() {
+  return isReact16 ? _reactDom2.default.createPortal : _reactDom2.default.unstable_renderSubtreeIntoContainer;
+};
+
+function getParentElement(parentSelector) {
+  return parentSelector();
+}
+
+var Modal = function (_Component) {
+  _inherits(Modal, _Component);
+
+  function Modal() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Modal);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Modal.__proto__ || Object.getPrototypeOf(Modal)).call.apply(_ref, [this].concat(args))), _this), _this.removePortal = function () {
+      !isReact16 && _reactDom2.default.unmountComponentAtNode(_this.node);
+      var parent = getParentElement(_this.props.parentSelector);
+      parent.removeChild(_this.node);
+    }, _this.portalRef = function (ref) {
+      _this.portal = ref;
+    }, _this.renderPortal = function (props) {
+      var createPortal = getCreatePortal();
+      var portal = createPortal(_this, _react2.default.createElement(_ModalPortal2.default, _extends({ defaultStyles: Modal.defaultStyles }, props)), _this.node);
+      _this.portalRef(portal);
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(Modal, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      if (!_safeHTMLElement.canUseDOM) return;
+
+      if (!isReact16) {
+        this.node = document.createElement("div");
+      }
+      this.node.className = this.props.portalClassName;
+
+      var parent = getParentElement(this.props.parentSelector);
+      parent.appendChild(this.node);
+
+      !isReact16 && this.renderPortal(this.props);
+    }
+  }, {
+    key: "getSnapshotBeforeUpdate",
+    value: function getSnapshotBeforeUpdate(prevProps) {
+      var prevParent = getParentElement(prevProps.parentSelector);
+      var nextParent = getParentElement(this.props.parentSelector);
+      return { prevParent: prevParent, nextParent: nextParent };
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, _, snapshot) {
+      if (!_safeHTMLElement.canUseDOM) return;
+      var _props = this.props,
+          isOpen = _props.isOpen,
+          portalClassName = _props.portalClassName;
+
+
+      if (prevProps.portalClassName !== portalClassName) {
+        this.node.className = portalClassName;
+      }
+
+      var prevParent = snapshot.prevParent,
+          nextParent = snapshot.nextParent;
+
+      if (nextParent !== prevParent) {
+        prevParent.removeChild(this.node);
+        nextParent.appendChild(this.node);
+      }
+
+      // Stop unnecessary renders if modal is remaining closed
+      if (!prevProps.isOpen && !isOpen) return;
+
+      !isReact16 && this.renderPortal(this.props);
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (!_safeHTMLElement.canUseDOM || !this.node || !this.portal) return;
+
+      var state = this.portal.state;
+      var now = Date.now();
+      var closesAt = state.isOpen && this.props.closeTimeoutMS && (state.closesAt || now + this.props.closeTimeoutMS);
+
+      if (closesAt) {
+        if (!state.beforeClose) {
+          this.portal.closeWithTimeout();
+        }
+
+        setTimeout(this.removePortal, closesAt - now);
+      } else {
+        this.removePortal();
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (!_safeHTMLElement.canUseDOM || !isReact16) {
+        return null;
+      }
+
+      if (!this.node && isReact16) {
+        this.node = document.createElement("div");
+      }
+
+      var createPortal = getCreatePortal();
+      return createPortal(_react2.default.createElement(_ModalPortal2.default, _extends({
+        ref: this.portalRef,
+        defaultStyles: Modal.defaultStyles
+      }, this.props)), this.node);
+    }
+  }], [{
+    key: "setAppElement",
+    value: function setAppElement(element) {
+      ariaAppHider.setElement(element);
+    }
+
+    /* eslint-disable react/no-unused-prop-types */
+
+    /* eslint-enable react/no-unused-prop-types */
+
+  }]);
+
+  return Modal;
+}(_react.Component);
+
+Modal.propTypes = {
+  isOpen: _propTypes2.default.bool.isRequired,
+  style: _propTypes2.default.shape({
+    content: _propTypes2.default.object,
+    overlay: _propTypes2.default.object
+  }),
+  portalClassName: _propTypes2.default.string,
+  bodyOpenClassName: _propTypes2.default.string,
+  htmlOpenClassName: _propTypes2.default.string,
+  className: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.shape({
+    base: _propTypes2.default.string.isRequired,
+    afterOpen: _propTypes2.default.string.isRequired,
+    beforeClose: _propTypes2.default.string.isRequired
+  })]),
+  overlayClassName: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.shape({
+    base: _propTypes2.default.string.isRequired,
+    afterOpen: _propTypes2.default.string.isRequired,
+    beforeClose: _propTypes2.default.string.isRequired
+  })]),
+  appElement: _propTypes2.default.instanceOf(_safeHTMLElement2.default),
+  onAfterOpen: _propTypes2.default.func,
+  onRequestClose: _propTypes2.default.func,
+  closeTimeoutMS: _propTypes2.default.number,
+  ariaHideApp: _propTypes2.default.bool,
+  shouldFocusAfterRender: _propTypes2.default.bool,
+  shouldCloseOnOverlayClick: _propTypes2.default.bool,
+  shouldReturnFocusAfterClose: _propTypes2.default.bool,
+  parentSelector: _propTypes2.default.func,
+  aria: _propTypes2.default.object,
+  data: _propTypes2.default.object,
+  role: _propTypes2.default.string,
+  contentLabel: _propTypes2.default.string,
+  shouldCloseOnEsc: _propTypes2.default.bool,
+  overlayRef: _propTypes2.default.func,
+  contentRef: _propTypes2.default.func
+};
+Modal.defaultProps = {
+  isOpen: false,
+  portalClassName: portalClassName,
+  bodyOpenClassName: bodyOpenClassName,
+  role: "dialog",
+  ariaHideApp: true,
+  closeTimeoutMS: 0,
+  shouldFocusAfterRender: true,
+  shouldCloseOnEsc: true,
+  shouldCloseOnOverlayClick: true,
+  shouldReturnFocusAfterClose: true,
+  parentSelector: function parentSelector() {
+    return document.body;
+  }
+};
+Modal.defaultStyles = {
+  overlay: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "rgba(255, 255, 255, 0.75)"
+  },
+  content: {
+    position: "absolute",
+    top: "40px",
+    left: "40px",
+    right: "40px",
+    bottom: "40px",
+    border: "1px solid #ccc",
+    background: "#fff",
+    overflow: "auto",
+    WebkitOverflowScrolling: "touch",
+    borderRadius: "4px",
+    outline: "none",
+    padding: "20px"
+  }
+};
+
+
+(0, _reactLifecyclesCompat.polyfill)(Modal);
+
+exports.default = Modal;
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/components/ModalPortal.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-modal/lib/components/ModalPortal.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _focusManager = __webpack_require__(/*! ../helpers/focusManager */ "./node_modules/react-modal/lib/helpers/focusManager.js");
+
+var focusManager = _interopRequireWildcard(_focusManager);
+
+var _scopeTab = __webpack_require__(/*! ../helpers/scopeTab */ "./node_modules/react-modal/lib/helpers/scopeTab.js");
+
+var _scopeTab2 = _interopRequireDefault(_scopeTab);
+
+var _ariaAppHider = __webpack_require__(/*! ../helpers/ariaAppHider */ "./node_modules/react-modal/lib/helpers/ariaAppHider.js");
+
+var ariaAppHider = _interopRequireWildcard(_ariaAppHider);
+
+var _classList = __webpack_require__(/*! ../helpers/classList */ "./node_modules/react-modal/lib/helpers/classList.js");
+
+var classList = _interopRequireWildcard(_classList);
+
+var _safeHTMLElement = __webpack_require__(/*! ../helpers/safeHTMLElement */ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js");
+
+var _safeHTMLElement2 = _interopRequireDefault(_safeHTMLElement);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// so that our CSS is statically analyzable
+var CLASS_NAMES = {
+  overlay: "ReactModal__Overlay",
+  content: "ReactModal__Content"
+};
+
+var TAB_KEY = 9;
+var ESC_KEY = 27;
+
+var ariaHiddenInstances = 0;
+
+var ModalPortal = function (_Component) {
+  _inherits(ModalPortal, _Component);
+
+  function ModalPortal(props) {
+    _classCallCheck(this, ModalPortal);
+
+    var _this = _possibleConstructorReturn(this, (ModalPortal.__proto__ || Object.getPrototypeOf(ModalPortal)).call(this, props));
+
+    _this.setOverlayRef = function (overlay) {
+      _this.overlay = overlay;
+      _this.props.overlayRef && _this.props.overlayRef(overlay);
+    };
+
+    _this.setContentRef = function (content) {
+      _this.content = content;
+      _this.props.contentRef && _this.props.contentRef(content);
+    };
+
+    _this.afterClose = function () {
+      var _this$props = _this.props,
+          appElement = _this$props.appElement,
+          ariaHideApp = _this$props.ariaHideApp,
+          htmlOpenClassName = _this$props.htmlOpenClassName,
+          bodyOpenClassName = _this$props.bodyOpenClassName;
+
+      // Remove classes.
+
+      bodyOpenClassName && classList.remove(document.body, bodyOpenClassName);
+
+      htmlOpenClassName && classList.remove(document.getElementsByTagName("html")[0], htmlOpenClassName);
+
+      // Reset aria-hidden attribute if all modals have been removed
+      if (ariaHideApp && ariaHiddenInstances > 0) {
+        ariaHiddenInstances -= 1;
+
+        if (ariaHiddenInstances === 0) {
+          ariaAppHider.show(appElement);
+        }
+      }
+
+      if (_this.props.shouldFocusAfterRender) {
+        if (_this.props.shouldReturnFocusAfterClose) {
+          focusManager.returnFocus();
+          focusManager.teardownScopedFocus();
+        } else {
+          focusManager.popWithoutFocus();
+        }
+      }
+
+      if (_this.props.onAfterClose) {
+        _this.props.onAfterClose();
+      }
+    };
+
+    _this.open = function () {
+      _this.beforeOpen();
+      if (_this.state.afterOpen && _this.state.beforeClose) {
+        clearTimeout(_this.closeTimer);
+        _this.setState({ beforeClose: false });
+      } else {
+        if (_this.props.shouldFocusAfterRender) {
+          focusManager.setupScopedFocus(_this.node);
+          focusManager.markForFocusLater();
+        }
+
+        _this.setState({ isOpen: true }, function () {
+          _this.setState({ afterOpen: true });
+
+          if (_this.props.isOpen && _this.props.onAfterOpen) {
+            _this.props.onAfterOpen({
+              overlayEl: _this.overlay,
+              contentEl: _this.content
+            });
+          }
+        });
+      }
+    };
+
+    _this.close = function () {
+      if (_this.props.closeTimeoutMS > 0) {
+        _this.closeWithTimeout();
+      } else {
+        _this.closeWithoutTimeout();
+      }
+    };
+
+    _this.focusContent = function () {
+      return _this.content && !_this.contentHasFocus() && _this.content.focus();
+    };
+
+    _this.closeWithTimeout = function () {
+      var closesAt = Date.now() + _this.props.closeTimeoutMS;
+      _this.setState({ beforeClose: true, closesAt: closesAt }, function () {
+        _this.closeTimer = setTimeout(_this.closeWithoutTimeout, _this.state.closesAt - Date.now());
+      });
+    };
+
+    _this.closeWithoutTimeout = function () {
+      _this.setState({
+        beforeClose: false,
+        isOpen: false,
+        afterOpen: false,
+        closesAt: null
+      }, _this.afterClose);
+    };
+
+    _this.handleKeyDown = function (event) {
+      if (event.keyCode === TAB_KEY) {
+        (0, _scopeTab2.default)(_this.content, event);
+      }
+
+      if (_this.props.shouldCloseOnEsc && event.keyCode === ESC_KEY) {
+        event.stopPropagation();
+        _this.requestClose(event);
+      }
+    };
+
+    _this.handleOverlayOnClick = function (event) {
+      if (_this.shouldClose === null) {
+        _this.shouldClose = true;
+      }
+
+      if (_this.shouldClose && _this.props.shouldCloseOnOverlayClick) {
+        if (_this.ownerHandlesClose()) {
+          _this.requestClose(event);
+        } else {
+          _this.focusContent();
+        }
+      }
+      _this.shouldClose = null;
+    };
+
+    _this.handleContentOnMouseUp = function () {
+      _this.shouldClose = false;
+    };
+
+    _this.handleOverlayOnMouseDown = function (event) {
+      if (!_this.props.shouldCloseOnOverlayClick && event.target == _this.overlay) {
+        event.preventDefault();
+      }
+    };
+
+    _this.handleContentOnClick = function () {
+      _this.shouldClose = false;
+    };
+
+    _this.handleContentOnMouseDown = function () {
+      _this.shouldClose = false;
+    };
+
+    _this.requestClose = function (event) {
+      return _this.ownerHandlesClose() && _this.props.onRequestClose(event);
+    };
+
+    _this.ownerHandlesClose = function () {
+      return _this.props.onRequestClose;
+    };
+
+    _this.shouldBeClosed = function () {
+      return !_this.state.isOpen && !_this.state.beforeClose;
+    };
+
+    _this.contentHasFocus = function () {
+      return document.activeElement === _this.content || _this.content.contains(document.activeElement);
+    };
+
+    _this.buildClassName = function (which, additional) {
+      var classNames = (typeof additional === "undefined" ? "undefined" : _typeof(additional)) === "object" ? additional : {
+        base: CLASS_NAMES[which],
+        afterOpen: CLASS_NAMES[which] + "--after-open",
+        beforeClose: CLASS_NAMES[which] + "--before-close"
+      };
+      var className = classNames.base;
+      if (_this.state.afterOpen) {
+        className = className + " " + classNames.afterOpen;
+      }
+      if (_this.state.beforeClose) {
+        className = className + " " + classNames.beforeClose;
+      }
+      return typeof additional === "string" && additional ? className + " " + additional : className;
+    };
+
+    _this.attributesFromObject = function (prefix, items) {
+      return Object.keys(items).reduce(function (acc, name) {
+        acc[prefix + "-" + name] = items[name];
+        return acc;
+      }, {});
+    };
+
+    _this.state = {
+      afterOpen: false,
+      beforeClose: false
+    };
+
+    _this.shouldClose = null;
+    _this.moveFromContentToOverlay = null;
+    return _this;
+  }
+
+  _createClass(ModalPortal, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      if (this.props.isOpen) {
+        this.open();
+      }
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, prevState) {
+      if (true) {
+        if (prevProps.bodyOpenClassName !== this.props.bodyOpenClassName) {
+          // eslint-disable-next-line no-console
+          console.warn('React-Modal: "bodyOpenClassName" prop has been modified. ' + "This may cause unexpected behavior when multiple modals are open.");
+        }
+        if (prevProps.htmlOpenClassName !== this.props.htmlOpenClassName) {
+          // eslint-disable-next-line no-console
+          console.warn('React-Modal: "htmlOpenClassName" prop has been modified. ' + "This may cause unexpected behavior when multiple modals are open.");
+        }
+      }
+
+      if (this.props.isOpen && !prevProps.isOpen) {
+        this.open();
+      } else if (!this.props.isOpen && prevProps.isOpen) {
+        this.close();
+      }
+
+      // Focus only needs to be set once when the modal is being opened
+      if (this.props.shouldFocusAfterRender && this.state.isOpen && !prevState.isOpen) {
+        this.focusContent();
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (this.state.isOpen) {
+        this.afterClose();
+      }
+      clearTimeout(this.closeTimer);
+    }
+  }, {
+    key: "beforeOpen",
+    value: function beforeOpen() {
+      var _props = this.props,
+          appElement = _props.appElement,
+          ariaHideApp = _props.ariaHideApp,
+          htmlOpenClassName = _props.htmlOpenClassName,
+          bodyOpenClassName = _props.bodyOpenClassName;
+
+      // Add classes.
+
+      bodyOpenClassName && classList.add(document.body, bodyOpenClassName);
+
+      htmlOpenClassName && classList.add(document.getElementsByTagName("html")[0], htmlOpenClassName);
+
+      if (ariaHideApp) {
+        ariaHiddenInstances += 1;
+        ariaAppHider.hide(appElement);
+      }
+    }
+
+    // Don't steal focus from inner elements
+
+  }, {
+    key: "render",
+    value: function render() {
+      var _props2 = this.props,
+          id = _props2.id,
+          className = _props2.className,
+          overlayClassName = _props2.overlayClassName,
+          defaultStyles = _props2.defaultStyles;
+
+      var contentStyles = className ? {} : defaultStyles.content;
+      var overlayStyles = overlayClassName ? {} : defaultStyles.overlay;
+
+      return this.shouldBeClosed() ? null : _react2.default.createElement(
+        "div",
+        {
+          ref: this.setOverlayRef,
+          className: this.buildClassName("overlay", overlayClassName),
+          style: _extends({}, overlayStyles, this.props.style.overlay),
+          onClick: this.handleOverlayOnClick,
+          onMouseDown: this.handleOverlayOnMouseDown
+        },
+        _react2.default.createElement(
+          "div",
+          _extends({
+            id: id,
+            ref: this.setContentRef,
+            style: _extends({}, contentStyles, this.props.style.content),
+            className: this.buildClassName("content", className),
+            tabIndex: "-1",
+            onKeyDown: this.handleKeyDown,
+            onMouseDown: this.handleContentOnMouseDown,
+            onMouseUp: this.handleContentOnMouseUp,
+            onClick: this.handleContentOnClick,
+            role: this.props.role,
+            "aria-label": this.props.contentLabel
+          }, this.attributesFromObject("aria", this.props.aria || {}), this.attributesFromObject("data", this.props.data || {}), {
+            "data-testid": this.props.testId
+          }),
+          this.props.children
+        )
+      );
+    }
+  }]);
+
+  return ModalPortal;
+}(_react.Component);
+
+ModalPortal.defaultProps = {
+  style: {
+    overlay: {},
+    content: {}
+  },
+  defaultStyles: {}
+};
+ModalPortal.propTypes = {
+  isOpen: _propTypes2.default.bool.isRequired,
+  defaultStyles: _propTypes2.default.shape({
+    content: _propTypes2.default.object,
+    overlay: _propTypes2.default.object
+  }),
+  style: _propTypes2.default.shape({
+    content: _propTypes2.default.object,
+    overlay: _propTypes2.default.object
+  }),
+  className: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
+  overlayClassName: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]),
+  bodyOpenClassName: _propTypes2.default.string,
+  htmlOpenClassName: _propTypes2.default.string,
+  ariaHideApp: _propTypes2.default.bool,
+  appElement: _propTypes2.default.instanceOf(_safeHTMLElement2.default),
+  onAfterOpen: _propTypes2.default.func,
+  onAfterClose: _propTypes2.default.func,
+  onRequestClose: _propTypes2.default.func,
+  closeTimeoutMS: _propTypes2.default.number,
+  shouldFocusAfterRender: _propTypes2.default.bool,
+  shouldCloseOnOverlayClick: _propTypes2.default.bool,
+  shouldReturnFocusAfterClose: _propTypes2.default.bool,
+  role: _propTypes2.default.string,
+  contentLabel: _propTypes2.default.string,
+  aria: _propTypes2.default.object,
+  data: _propTypes2.default.object,
+  children: _propTypes2.default.node,
+  shouldCloseOnEsc: _propTypes2.default.bool,
+  overlayRef: _propTypes2.default.func,
+  contentRef: _propTypes2.default.func,
+  id: _propTypes2.default.string,
+  testId: _propTypes2.default.string
+};
+exports.default = ModalPortal;
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/ariaAppHider.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/ariaAppHider.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.assertNodeList = assertNodeList;
+exports.setElement = setElement;
+exports.validateElement = validateElement;
+exports.hide = hide;
+exports.show = show;
+exports.documentNotReadyOrSSRTesting = documentNotReadyOrSSRTesting;
+exports.resetForTesting = resetForTesting;
+
+var _warning = __webpack_require__(/*! warning */ "./node_modules/warning/warning.js");
+
+var _warning2 = _interopRequireDefault(_warning);
+
+var _safeHTMLElement = __webpack_require__(/*! ./safeHTMLElement */ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var globalElement = null;
+
+function assertNodeList(nodeList, selector) {
+  if (!nodeList || !nodeList.length) {
+    throw new Error("react-modal: No elements were found for selector " + selector + ".");
+  }
+}
+
+function setElement(element) {
+  var useElement = element;
+  if (typeof useElement === "string" && _safeHTMLElement.canUseDOM) {
+    var el = document.querySelectorAll(useElement);
+    assertNodeList(el, useElement);
+    useElement = "length" in el ? el[0] : el;
+  }
+  globalElement = useElement || globalElement;
+  return globalElement;
+}
+
+function validateElement(appElement) {
+  if (!appElement && !globalElement) {
+    (0, _warning2.default)(false, ["react-modal: App element is not defined.", "Please use `Modal.setAppElement(el)` or set `appElement={el}`.", "This is needed so screen readers don't see main content", "when modal is opened. It is not recommended, but you can opt-out", "by setting `ariaHideApp={false}`."].join(" "));
+
+    return false;
+  }
+
+  return true;
+}
+
+function hide(appElement) {
+  if (validateElement(appElement)) {
+    (appElement || globalElement).setAttribute("aria-hidden", "true");
+  }
+}
+
+function show(appElement) {
+  if (validateElement(appElement)) {
+    (appElement || globalElement).removeAttribute("aria-hidden");
+  }
+}
+
+function documentNotReadyOrSSRTesting() {
+  globalElement = null;
+}
+
+function resetForTesting() {
+  globalElement = null;
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/classList.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/classList.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.dumpClassLists = dumpClassLists;
+var htmlClassList = {};
+var docBodyClassList = {};
+
+function dumpClassLists() {
+  if (true) {
+    var classes = document.getElementsByTagName("html")[0].className;
+    var buffer = "Show tracked classes:\n\n";
+
+    buffer += "<html /> (" + classes + "):\n";
+    for (var x in htmlClassList) {
+      buffer += "  " + x + " " + htmlClassList[x] + "\n";
+    }
+
+    classes = document.body.className;
+
+    // eslint-disable-next-line max-len
+    buffer += "\n\ndoc.body (" + classes + "):\n";
+    for (var _x in docBodyClassList) {
+      buffer += "  " + _x + " " + docBodyClassList[_x] + "\n";
+    }
+
+    buffer += "\n";
+
+    // eslint-disable-next-line no-console
+    console.log(buffer);
+  }
+}
+
+/**
+ * Track the number of reference of a class.
+ * @param {object} poll The poll to receive the reference.
+ * @param {string} className The class name.
+ * @return {string}
+ */
+var incrementReference = function incrementReference(poll, className) {
+  if (!poll[className]) {
+    poll[className] = 0;
+  }
+  poll[className] += 1;
+  return className;
+};
+
+/**
+ * Drop the reference of a class.
+ * @param {object} poll The poll to receive the reference.
+ * @param {string} className The class name.
+ * @return {string}
+ */
+var decrementReference = function decrementReference(poll, className) {
+  if (poll[className]) {
+    poll[className] -= 1;
+  }
+  return className;
+};
+
+/**
+ * Track a class and add to the given class list.
+ * @param {Object} classListRef A class list of an element.
+ * @param {Object} poll         The poll to be used.
+ * @param {Array}  classes      The list of classes to be tracked.
+ */
+var trackClass = function trackClass(classListRef, poll, classes) {
+  classes.forEach(function (className) {
+    incrementReference(poll, className);
+    classListRef.add(className);
+  });
+};
+
+/**
+ * Untrack a class and remove from the given class list if the reference
+ * reaches 0.
+ * @param {Object} classListRef A class list of an element.
+ * @param {Object} poll         The poll to be used.
+ * @param {Array}  classes      The list of classes to be untracked.
+ */
+var untrackClass = function untrackClass(classListRef, poll, classes) {
+  classes.forEach(function (className) {
+    decrementReference(poll, className);
+    poll[className] === 0 && classListRef.remove(className);
+  });
+};
+
+/**
+ * Public inferface to add classes to the document.body.
+ * @param {string} bodyClass The class string to be added.
+ *                           It may contain more then one class
+ *                           with ' ' as separator.
+ */
+var add = exports.add = function add(element, classString) {
+  return trackClass(element.classList, element.nodeName.toLowerCase() == "html" ? htmlClassList : docBodyClassList, classString.split(" "));
+};
+
+/**
+ * Public inferface to remove classes from the document.body.
+ * @param {string} bodyClass The class string to be added.
+ *                           It may contain more then one class
+ *                           with ' ' as separator.
+ */
+var remove = exports.remove = function remove(element, classString) {
+  return untrackClass(element.classList, element.nodeName.toLowerCase() == "html" ? htmlClassList : docBodyClassList, classString.split(" "));
+};
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/focusManager.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/focusManager.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.handleBlur = handleBlur;
+exports.handleFocus = handleFocus;
+exports.markForFocusLater = markForFocusLater;
+exports.returnFocus = returnFocus;
+exports.popWithoutFocus = popWithoutFocus;
+exports.setupScopedFocus = setupScopedFocus;
+exports.teardownScopedFocus = teardownScopedFocus;
+
+var _tabbable = __webpack_require__(/*! ../helpers/tabbable */ "./node_modules/react-modal/lib/helpers/tabbable.js");
+
+var _tabbable2 = _interopRequireDefault(_tabbable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var focusLaterElements = [];
+var modalElement = null;
+var needToFocus = false;
+
+function handleBlur() {
+  needToFocus = true;
+}
+
+function handleFocus() {
+  if (needToFocus) {
+    needToFocus = false;
+    if (!modalElement) {
+      return;
+    }
+    // need to see how jQuery shims document.on('focusin') so we don't need the
+    // setTimeout, firefox doesn't support focusin, if it did, we could focus
+    // the element outside of a setTimeout. Side-effect of this implementation
+    // is that the document.body gets focus, and then we focus our element right
+    // after, seems fine.
+    setTimeout(function () {
+      if (modalElement.contains(document.activeElement)) {
+        return;
+      }
+      var el = (0, _tabbable2.default)(modalElement)[0] || modalElement;
+      el.focus();
+    }, 0);
+  }
+}
+
+function markForFocusLater() {
+  focusLaterElements.push(document.activeElement);
+}
+
+/* eslint-disable no-console */
+function returnFocus() {
+  var toFocus = null;
+  try {
+    if (focusLaterElements.length !== 0) {
+      toFocus = focusLaterElements.pop();
+      toFocus.focus();
+    }
+    return;
+  } catch (e) {
+    console.warn(["You tried to return focus to", toFocus, "but it is not in the DOM anymore"].join(" "));
+  }
+}
+/* eslint-enable no-console */
+
+function popWithoutFocus() {
+  focusLaterElements.length > 0 && focusLaterElements.pop();
+}
+
+function setupScopedFocus(element) {
+  modalElement = element;
+
+  if (window.addEventListener) {
+    window.addEventListener("blur", handleBlur, false);
+    document.addEventListener("focus", handleFocus, true);
+  } else {
+    window.attachEvent("onBlur", handleBlur);
+    document.attachEvent("onFocus", handleFocus);
+  }
+}
+
+function teardownScopedFocus() {
+  modalElement = null;
+
+  if (window.addEventListener) {
+    window.removeEventListener("blur", handleBlur);
+    document.removeEventListener("focus", handleFocus);
+  } else {
+    window.detachEvent("onBlur", handleBlur);
+    document.detachEvent("onFocus", handleFocus);
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/safeHTMLElement.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/safeHTMLElement.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.canUseDOM = undefined;
+
+var _exenv = __webpack_require__(/*! exenv */ "./node_modules/exenv/index.js");
+
+var _exenv2 = _interopRequireDefault(_exenv);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var EE = _exenv2.default;
+
+var SafeHTMLElement = EE.canUseDOM ? window.HTMLElement : {};
+
+var canUseDOM = exports.canUseDOM = EE.canUseDOM;
+
+exports.default = SafeHTMLElement;
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/scopeTab.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/scopeTab.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = scopeTab;
+
+var _tabbable = __webpack_require__(/*! ./tabbable */ "./node_modules/react-modal/lib/helpers/tabbable.js");
+
+var _tabbable2 = _interopRequireDefault(_tabbable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function scopeTab(node, event) {
+  var tabbable = (0, _tabbable2.default)(node);
+
+  if (!tabbable.length) {
+    // Do nothing, since there are no elements that can receive focus.
+    event.preventDefault();
+    return;
+  }
+
+  var shiftKey = event.shiftKey;
+  var head = tabbable[0];
+  var tail = tabbable[tabbable.length - 1];
+
+  // proceed with default browser behavior on tab.
+  // Focus on last element on shift + tab.
+  if (node === document.activeElement) {
+    if (!shiftKey) return;
+    target = tail;
+  }
+
+  var target;
+  if (tail === document.activeElement && !shiftKey) {
+    target = head;
+  }
+
+  if (head === document.activeElement && shiftKey) {
+    target = tail;
+  }
+
+  if (target) {
+    event.preventDefault();
+    target.focus();
+    return;
+  }
+
+  // Safari radio issue.
+  //
+  // Safari does not move the focus to the radio button,
+  // so we need to force it to really walk through all elements.
+  //
+  // This is very error prone, since we are trying to guess
+  // if it is a safari browser from the first occurence between
+  // chrome or safari.
+  //
+  // The chrome user agent contains the first ocurrence
+  // as the 'chrome/version' and later the 'safari/version'.
+  var checkSafari = /(\bChrome\b|\bSafari\b)\//.exec(navigator.userAgent);
+  var isSafariDesktop = checkSafari != null && checkSafari[1] != "Chrome" && /\biPod\b|\biPad\b/g.exec(navigator.userAgent) == null;
+
+  // If we are not in safari desktop, let the browser control
+  // the focus
+  if (!isSafariDesktop) return;
+
+  var x = tabbable.indexOf(document.activeElement);
+
+  if (x > -1) {
+    x += shiftKey ? -1 : 1;
+  }
+
+  // If the tabbable element does not exist,
+  // focus head/tail based on shiftKey
+  if (typeof tabbable[x] === "undefined") {
+    event.preventDefault();
+    target = shiftKey ? tail : head;
+    target.focus();
+    return;
+  }
+
+  event.preventDefault();
+
+  tabbable[x].focus();
+}
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/helpers/tabbable.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-modal/lib/helpers/tabbable.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = findTabbableDescendants;
+/*!
+ * Adapted from jQuery UI core
+ *
+ * http://jqueryui.com
+ *
+ * Copyright 2014 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/category/ui-core/
+ */
+
+var tabbableNode = /input|select|textarea|button|object/;
+
+function hidesContents(element) {
+  var zeroSize = element.offsetWidth <= 0 && element.offsetHeight <= 0;
+
+  // If the node is empty, this is good enough
+  if (zeroSize && !element.innerHTML) return true;
+
+  // Otherwise we need to check some styles
+  var style = window.getComputedStyle(element);
+  return zeroSize ? style.getPropertyValue("overflow") !== "visible" ||
+  // if 'overflow: visible' set, check if there is actually any overflow
+  element.scrollWidth <= 0 && element.scrollHeight <= 0 : style.getPropertyValue("display") == "none";
+}
+
+function visible(element) {
+  var parentElement = element;
+  while (parentElement) {
+    if (parentElement === document.body) break;
+    if (hidesContents(parentElement)) return false;
+    parentElement = parentElement.parentNode;
+  }
+  return true;
+}
+
+function focusable(element, isTabIndexNotNaN) {
+  var nodeName = element.nodeName.toLowerCase();
+  var res = tabbableNode.test(nodeName) && !element.disabled || (nodeName === "a" ? element.href || isTabIndexNotNaN : isTabIndexNotNaN);
+  return res && visible(element);
+}
+
+function tabbable(element) {
+  var tabIndex = element.getAttribute("tabindex");
+  if (tabIndex === null) tabIndex = undefined;
+  var isTabIndexNaN = isNaN(tabIndex);
+  return (isTabIndexNaN || tabIndex >= 0) && focusable(element, !isTabIndexNaN);
+}
+
+function findTabbableDescendants(element) {
+  return [].slice.call(element.querySelectorAll("*"), 0).filter(tabbable);
+}
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/react-modal/lib/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/react-modal/lib/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Modal = __webpack_require__(/*! ./components/Modal */ "./node_modules/react-modal/lib/components/Modal.js");
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Modal2.default;
+module.exports = exports["default"];
+
+/***/ }),
+
 /***/ "./node_modules/react/cjs/react.development.js":
 /*!*****************************************************!*\
   !*** ./node_modules/react/cjs/react.development.js ***!
@@ -68722,6 +73247,589 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/lib/addStyles.js":
+/*!****************************************************!*\
+  !*** ./node_modules/style-loader/lib/addStyles.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+var stylesInDom = {};
+
+var	memoize = function (fn) {
+	var memo;
+
+	return function () {
+		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+		return memo;
+	};
+};
+
+var isOldIE = memoize(function () {
+	// Test for IE <= 9 as proposed by Browserhacks
+	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+	// Tests for existence of standard globals is to allow style-loader
+	// to operate correctly into non-standard environments
+	// @see https://github.com/webpack-contrib/style-loader/issues/177
+	return window && document && document.all && !window.atob;
+});
+
+var getTarget = function (target, parent) {
+  if (parent){
+    return parent.querySelector(target);
+  }
+  return document.querySelector(target);
+};
+
+var getElement = (function (fn) {
+	var memo = {};
+
+	return function(target, parent) {
+                // If passing function in options, then use it for resolve "head" element.
+                // Useful for Shadow Root style i.e
+                // {
+                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
+                // }
+                if (typeof target === 'function') {
+                        return target();
+                }
+                if (typeof memo[target] === "undefined") {
+			var styleTarget = getTarget.call(this, target, parent);
+			// Special case to return head of iframe instead of iframe itself
+			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+				try {
+					// This will throw an exception if access to iframe is blocked
+					// due to cross-origin restrictions
+					styleTarget = styleTarget.contentDocument.head;
+				} catch(e) {
+					styleTarget = null;
+				}
+			}
+			memo[target] = styleTarget;
+		}
+		return memo[target]
+	};
+})();
+
+var singleton = null;
+var	singletonCounter = 0;
+var	stylesInsertedAtTop = [];
+
+var	fixUrls = __webpack_require__(/*! ./urls */ "./node_modules/style-loader/lib/urls.js");
+
+module.exports = function(list, options) {
+	if (typeof DEBUG !== "undefined" && DEBUG) {
+		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+        if (!options.insertInto) options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (!options.insertAt) options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+
+	addStylesToDom(styles, options);
+
+	return function update (newList) {
+		var mayRemove = [];
+
+		for (var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+
+		for (var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+
+			if(domStyle.refs === 0) {
+				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
+
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom (styles, options) {
+	for (var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+
+		if(domStyle) {
+			domStyle.refs++;
+
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles (list, options) {
+	var styles = [];
+	var newStyles = {};
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+
+		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
+		else newStyles[id].parts.push(part);
+	}
+
+	return styles;
+}
+
+function insertStyleElement (options, style) {
+	var target = getElement(options.insertInto)
+
+	if (!target) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+
+	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
+
+	if (options.insertAt === "top") {
+		if (!lastStyleElementInsertedAtTop) {
+			target.insertBefore(style, target.firstChild);
+		} else if (lastStyleElementInsertedAtTop.nextSibling) {
+			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			target.appendChild(style);
+		}
+		stylesInsertedAtTop.push(style);
+	} else if (options.insertAt === "bottom") {
+		target.appendChild(style);
+	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
+		var nextSibling = getElement(options.insertAt.before, target);
+		target.insertBefore(style, nextSibling);
+	} else {
+		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
+	}
+}
+
+function removeStyleElement (style) {
+	if (style.parentNode === null) return false;
+	style.parentNode.removeChild(style);
+
+	var idx = stylesInsertedAtTop.indexOf(style);
+	if(idx >= 0) {
+		stylesInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement (options) {
+	var style = document.createElement("style");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+
+	if(options.attrs.nonce === undefined) {
+		var nonce = getNonce();
+		if (nonce) {
+			options.attrs.nonce = nonce;
+		}
+	}
+
+	addAttrs(style, options.attrs);
+	insertStyleElement(options, style);
+
+	return style;
+}
+
+function createLinkElement (options) {
+	var link = document.createElement("link");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+	options.attrs.rel = "stylesheet";
+
+	addAttrs(link, options.attrs);
+	insertStyleElement(options, link);
+
+	return link;
+}
+
+function addAttrs (el, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		el.setAttribute(key, attrs[key]);
+	});
+}
+
+function getNonce() {
+	if (false) {}
+
+	return __webpack_require__.nc;
+}
+
+function addStyle (obj, options) {
+	var style, update, remove, result;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    result = typeof options.transform === 'function'
+		 ? options.transform(obj.css) 
+		 : options.transform.default(obj.css);
+
+	    if (result) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = result;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css.
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+
+		style = singleton || (singleton = createStyleElement(options));
+
+		update = applyToSingletonTag.bind(null, style, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+
+	} else if (
+		obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function"
+	) {
+		style = createLinkElement(options);
+		update = updateLink.bind(null, style, options);
+		remove = function () {
+			removeStyleElement(style);
+
+			if(style.href) URL.revokeObjectURL(style.href);
+		};
+	} else {
+		style = createStyleElement(options);
+		update = applyToTag.bind(null, style);
+		remove = function () {
+			removeStyleElement(style);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle (newObj) {
+		if (newObj) {
+			if (
+				newObj.css === obj.css &&
+				newObj.media === obj.media &&
+				newObj.sourceMap === obj.sourceMap
+			) {
+				return;
+			}
+
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag (style, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (style.styleSheet) {
+		style.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = style.childNodes;
+
+		if (childNodes[index]) style.removeChild(childNodes[index]);
+
+		if (childNodes.length) {
+			style.insertBefore(cssNode, childNodes[index]);
+		} else {
+			style.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag (style, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		style.setAttribute("media", media)
+	}
+
+	if(style.styleSheet) {
+		style.styleSheet.cssText = css;
+	} else {
+		while(style.firstChild) {
+			style.removeChild(style.firstChild);
+		}
+
+		style.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink (link, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/*
+		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+		and there is no publicPath defined then lets turn convertToAbsoluteUrls
+		on by default.  Otherwise default to the convertToAbsoluteUrls option
+		directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls) {
+		css = fixUrls(css);
+	}
+
+	if (sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = link.href;
+
+	link.href = URL.createObjectURL(blob);
+
+	if(oldSrc) URL.revokeObjectURL(oldSrc);
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/lib/urls.js":
+/*!***********************************************!*\
+  !*** ./node_modules/style-loader/lib/urls.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/warning/warning.js":
+/*!*****************************************!*\
+  !*** ./node_modules/warning/warning.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+/**
+ * Similar to invariant but only logs a warning if the condition is not met.
+ * This can be used to log issues in development environments in critical
+ * paths. Removing the logging code for production environments will keep the
+ * same logic and follow the same code paths.
+ */
+
+var __DEV__ = "development" !== 'production';
+
+var warning = function() {};
+
+if (__DEV__) {
+  var printWarning = function printWarning(format, args) {
+    var len = arguments.length;
+    args = new Array(len > 1 ? len - 1 : 0);
+    for (var key = 1; key < len; key++) {
+      args[key - 1] = arguments[key];
+    }
+    var argIndex = 0;
+    var message = 'Warning: ' +
+      format.replace(/%s/g, function() {
+        return args[argIndex++];
+      });
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  }
+
+  warning = function(condition, format, args) {
+    var len = arguments.length;
+    args = new Array(len > 2 ? len - 2 : 0);
+    for (var key = 2; key < len; key++) {
+      args[key - 2] = arguments[key];
+    }
+    if (format === undefined) {
+      throw new Error(
+          '`warning(condition, format, ...args)` requires a warning ' +
+          'message argument'
+      );
+    }
+    if (!condition) {
+      printWarning.apply(null, [format].concat(args));
+    }
+  };
+}
+
+module.exports = warning;
+
+
+/***/ }),
+
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -68793,7 +73901,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/**
+/* WEBPACK VAR INJECTION */(function(process) {/**
  * First we will load all of this project's JavaScript dependencies which
  * includes React and other helpers. It's a great starting point while
  * building robust, powerful web applications using React + Laravel.
@@ -68801,7 +73909,7 @@ module.exports = function(module) {
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-axios.defaults.baseURL = '{{ env("APP_URL") }}';
+axios.defaults.baseURL = process.env.APP_URL;
 /**
  * Next, we will create a fresh React component instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -68811,6 +73919,7 @@ axios.defaults.baseURL = '{{ env("APP_URL") }}';
 __webpack_require__(/*! ./components/images */ "./resources/js/components/images/index.js");
 
 __webpack_require__(/*! ./components/home */ "./resources/js/components/home/index.js");
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
@@ -68874,18 +73983,17 @@ __webpack_require__.r(__webpack_exports__);
 
 function Home() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "container"
+    className: "container home"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row justify-content-center"
+    className: "row h-100"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-8"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card-header"
-  }, "Home Component"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card-body"
-  }, "I'm an Home component!")))));
+    className: "col-md-12 d-flex justify-content-around align-items-center"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "landing-text"
+  }, "Welcome, ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Nonagon ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Gallery"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/gallery",
+    className: "btn btn-outline-dark btn-lg text-uppercase"
+  }, "Let's try"))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
@@ -68916,10 +74024,10 @@ if (document.getElementById('root')) {
 
 /***/ }),
 
-/***/ "./resources/js/components/images/Image.js":
-/*!*************************************************!*\
-  !*** ./resources/js/components/images/Image.js ***!
-  \*************************************************/
+/***/ "./resources/js/components/images/Images.js":
+/*!**************************************************!*\
+  !*** ./resources/js/components/images/Images.js ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -68927,13 +74035,194 @@ if (document.getElementById('root')) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Item */ "./resources/js/components/images/Item.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
-function Image(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "I am Image Controller"));
-}
 
-/* harmony default export */ __webpack_exports__["default"] = (Image);
+
+
+var Images =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Images, _Component);
+
+  function Images(props) {
+    var _this;
+
+    _classCallCheck(this, Images);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Images).call(this, props));
+    _this.state = {
+      images: [],
+      loading: true
+    };
+    return _this;
+  }
+
+  _createClass(Images, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/api/images').then(function (_ref) {
+        var data = _ref.data;
+
+        _this2.setState({
+          images: data,
+          loading: false
+        });
+      })["catch"](function (exp) {
+        console.log('exp: ', exp);
+
+        _this2.setState({
+          loading: false
+        });
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this$state = this.state,
+          images = _this$state.images,
+          loading = _this$state.loading;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "I am Image Controller"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Loading: ", JSON.stringify(loading, undefined, 2)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Images: ", JSON.stringify(images, undefined, 2)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row mb-4"
+      }, [1, 2, 3, 4, 5, 6, 7, 8, 9].map(function (image, i) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          key: i
+        });
+      })));
+    }
+  }]);
+
+  return Images;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Images);
+
+/***/ }),
+
+/***/ "./resources/js/components/images/Item.js":
+/*!************************************************!*\
+  !*** ./resources/js/components/images/Item.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_image_lightbox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-image-lightbox */ "./node_modules/react-image-lightbox/dist/index.es.js");
+/* harmony import */ var react_image_lightbox_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-image-lightbox/style.css */ "./node_modules/react-image-lightbox/style.css");
+/* harmony import */ var react_image_lightbox_style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_image_lightbox_style_css__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var images = ['//lorempixel.com/500/500/business/2', '//placekitten.com/4000/3000', '//lorempixel.com/500/500/business/2', '//placekitten.com/1500/1500'];
+
+var Item =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Item, _Component);
+
+  function Item(props) {
+    var _this;
+
+    _classCallCheck(this, Item);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Item).call(this, props));
+    _this.state = {
+      photoIndex: 0,
+      isOpen: false
+    };
+    return _this;
+  }
+
+  _createClass(Item, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$state = this.state,
+          photoIndex = _this$state.photoIndex,
+          isOpen = _this$state.isOpen;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-4 mb-4",
+        onClick: function onClick() {
+          return _this2.setState({
+            isOpen: true
+          });
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "http://lorempixel.com/500/500/business/2",
+        alt: "",
+        className: "img-fluid single-img"
+      })), isOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_image_lightbox__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        mainSrc: images[photoIndex],
+        nextSrc: images[(photoIndex + 1) % images.length],
+        prevSrc: images[(photoIndex + images.length - 1) % images.length],
+        onCloseRequest: function onCloseRequest() {
+          return _this2.setState({
+            isOpen: false
+          });
+        },
+        imageTitle: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "TItle Here"),
+        onMovePrevRequest: function onMovePrevRequest() {
+          return _this2.setState({
+            photoIndex: (photoIndex + images.length - 1) % images.length
+          });
+        },
+        onMoveNextRequest: function onMoveNextRequest() {
+          return _this2.setState({
+            photoIndex: (photoIndex + 1) % images.length
+          });
+        }
+      }));
+    }
+  }]);
+
+  return Item;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Item);
 
 /***/ }),
 
@@ -68950,13 +74239,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Image */ "./resources/js/components/images/Image.js");
+/* harmony import */ var _Images__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Images */ "./resources/js/components/images/Images.js");
 
 
 
 
 if (document.getElementById('images-container')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Image__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('images-container'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Images__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('images-container'));
 }
 
 /***/ }),

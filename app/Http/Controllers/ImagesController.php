@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Image;
 
 class ImagesController extends Controller
 {
@@ -11,9 +12,10 @@ class ImagesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getIndex()
+    public function index()
     {
-        return view('images.index');
+        $images = Image::all();
+        return response($images);
     }
 
     /**

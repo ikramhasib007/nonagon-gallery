@@ -11100,3 +11100,59 @@ a.text-dark:focus {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
+section#content {
+  min-height: calc(100vh - 56px - 94px);
+}
+
+.navbar .navbar-brand {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: monospace;
+  font-size: x-large;
+  color: #11a5bf;
+}
+
+.navbar .navbar-brand span {
+  padding-left: 0.3em;
+  color: #4d7e37;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
+
+.navbar .nav-item.active {
+  border-left: #444 3px solid;
+}
+
+.single-img {
+  cursor: pointer;
+}
+
+.container.home {
+  height: calc(100vh - 100px);
+}
+
+.landing-text {
+  font-weight: 900;
+  font-family: serif;
+  color: #525252;
+  font-size: 40px;
+}
+
+.landing-text p {
+  font-size: 64px;
+  color: #4d7e37;
+}
+
+.landing-text p span {
+  color: #11a5bf;
+}
+

@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/images', 'ImagesController@getIndex');
+Route::get('/gallery', 'GalleryController@getIndex');
 Route::get('/', 'HomeController@getIndex');
