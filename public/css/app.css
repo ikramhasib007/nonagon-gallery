@@ -11156,3 +11156,7 @@ section#content {
   color: #11a5bf;
 }
 
+.nonagon-loader {
+  height: calc(100vh - 260px);
+}
+

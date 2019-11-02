@@ -36,6 +36,7 @@ class ImagesController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request);
         return 'store';
     }
 
