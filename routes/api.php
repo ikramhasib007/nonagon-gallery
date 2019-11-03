@@ -17,4 +17,5 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
+Route::get('/images/next/{offset}', 'ImagesController@nextImages');
 Route::resource('/images', 'ImagesController');

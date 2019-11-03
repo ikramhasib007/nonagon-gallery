@@ -56,9 +56,6 @@ class Upload extends Component {
   render() { 
     const { title, image, progress, errors, sucess } = this.state;
     return <div className="row m-4 d-flex flex-column align-items-center">
-      <div className="my-3">
-        <progress value={progress} max="100"/>
-      </div>
       <form
         className={`form-inline${((!!title && !!image) || errors.includes('title') || errors.includes('image')) ? ' was-validated' : ''}`}
         onSubmit={this.handleSubmit}

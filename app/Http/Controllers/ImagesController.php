@@ -15,8 +15,25 @@ class ImagesController extends Controller
      */
     public function index()
     {
-        $images = Gallery::orderBy('created_at', 'desc')->get();
-        return response($images);
+        $images = Gallery::orderBy('created_at', 'desc')
+                ->limit(9)
+                ->get();
+        $count = Gallery::count();
+        return response([
+            'images' => $images,
+            'count' => $count
+        ]);
+    }
+
+    public function nextImages($offset)
+    {
+        $images = Gallery::orderBy('created_at', 'desc')
+                ->offset($offset)
+                ->limit(9)
+                ->get();
+        return response([
+            'images' => $images,
+        ]);
     }
 
     /**
