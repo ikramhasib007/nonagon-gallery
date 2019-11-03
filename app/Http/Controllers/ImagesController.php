@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Image;
+use App\Gallery;
+use Intervention\Image\Facades\Image;
 
 class ImagesController extends Controller
 {
@@ -14,7 +15,7 @@ class ImagesController extends Controller
      */
     public function index()
     {
-        $images = Image::all();
+        $images = Gallery::orderBy('created_at', 'desc')->get();
         return response($images);
     }
 
@@ -36,8 +37,22 @@ class ImagesController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
-        return 'store';
+        $request->validate([
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+       ]);
+       if ($files = $request->file('image')) {
+            $destinationPath = 'images/'; // upload path
+            $profileImage = date('YmdHis') . "." . $files->getClientOriginalExtension();
+            $files->move($destinationPath, $profileImage);
+
+            $gallery = new Gallery();
+            $gallery->title = $request->get('title');
+            $gallery->filename = $profileImage;
+            $gallery->save();
+            return response()->json('Successfully uploaded');
+        }
+
+        return response()->json('Upload failed');
     }
 
     /**

@@ -7122,19 +7122,6 @@ module.exports = focusTrap;
 
 /***/ }),
 
-/***/ "./node_modules/form-data/lib/browser.js":
-/*!***********************************************!*\
-  !*** ./node_modules/form-data/lib/browser.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* eslint-env browser */
-module.exports = typeof self == 'object' ? self.FormData : window.FormData;
-
-
-/***/ }),
-
 /***/ "./node_modules/is-buffer/index.js":
 /*!*****************************************!*\
   !*** ./node_modules/is-buffer/index.js ***!
@@ -78834,7 +78821,7 @@ function Home() {
     className: "col-md-12 d-flex justify-content-around align-items-center"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "landing-text"
-  }, "Welcome, ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Nonagon ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Gallery"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, "Welcome to ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Nonagon ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Gallery"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "/gallery",
     className: "btn btn-outline-dark btn-lg text-uppercase"
   }, "Let's try"))));
@@ -78938,10 +78925,34 @@ function (_Component) {
       });
     };
 
+    _this.handleUploaded = function (status) {
+      if (status === 'success') {
+        return _this.setState({
+          loading: true
+        }, function () {
+          axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/api/images').then(function (_ref) {
+            var data = _ref.data;
+            return _this.setState({
+              images: data,
+              loading: false,
+              modal: false,
+              uploaded: status
+            });
+          });
+        });
+      }
+
+      _this.setState({
+        modal: false,
+        uploaded: status
+      });
+    };
+
     _this.state = {
       images: [],
       loading: true,
-      modal: false
+      modal: false,
+      uploaded: ''
     };
     return _this;
   }
@@ -78951,8 +78962,8 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/api/images').then(function (_ref) {
-        var data = _ref.data;
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/api/images').then(function (_ref2) {
+        var data = _ref2.data;
 
         _this2.setState({
           images: data,
@@ -78982,7 +78993,9 @@ function (_Component) {
         open: modal,
         onClose: this.handleModalClose,
         center: true
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Upload__WEBPACK_IMPORTED_MODULE_4__["default"], null))), loading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Upload__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        uploaded: this.handleUploaded
+      }))), loading && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row d-flex justify-content-center w-full nonagon-loader align-items-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_loader_spinner__WEBPACK_IMPORTED_MODULE_5___default.a, {
         type: "Grid",
@@ -78991,9 +79004,10 @@ function (_Component) {
         width: 100
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row"
-      }, [1, 2, 3, 4, 5, 6, 7, 8, 9].map(function (image, i) {
+      }, images.map(function (image, i) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Item__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          key: i
+          key: i,
+          image: image
         });
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row d-flex justify-content-center pl-3 pr-3 mb-2"
@@ -79072,7 +79086,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var images = ['//lorempixel.com/500/500/business/2', '//placekitten.com/4000/3000', '//lorempixel.com/500/500/business/2', '//placekitten.com/1500/1500'];
+var lightBoxImages = [base_url + '/500/500/business/2', base_url + '/4000/3000', base_url + '/500/500/business/2', base_url + '/1500/1500'];
 
 var Item =
 /*#__PURE__*/
@@ -79108,7 +79122,7 @@ function (_Component) {
           });
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "http://lorempixel.com/500/500/business/2",
+        src: 'images/' + this.props.image.filename,
         alt: "",
         className: "img-fluid single-img"
       })), isOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_image_lightbox__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -79153,10 +79167,8 @@ function (_Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var form_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! form-data */ "./node_modules/form-data/lib/browser.js");
-/* harmony import */ var form_data__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(form_data__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -79176,7 +79188,6 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
 
 
 
@@ -79202,11 +79213,11 @@ function (_Component) {
         return error !== name;
       });
 
-      if (name === 'image' && e.target.files[0]) {
-        var image = e.target.files[0];
-        return _this.setState(function () {
+      if (name === 'image' && (e.target.files || e.dataTransfer.files)) {
+        var files = e.target.files || e.dataTransfer.files;
+        if (_this.state.supported_mime.includes(files[0].type)) return _this.setState(function () {
           return {
-            image: image,
+            image: files[0],
             errors: errors
           };
         });
@@ -79229,25 +79240,35 @@ function (_Component) {
         });
       }
 
-      var data = new form_data__WEBPACK_IMPORTED_MODULE_1___default.a();
-      data.append('file', image, image.name);
-      data.append('title', title);
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/api/images', data, {
+      var formData = new FormData();
+      var config = {
         headers: {
-          'accept': 'application/json',
-          'Accept-Language': 'en-US,en;q=0.8',
-          'Content-Type': "multipart/form-data; boundary=".concat(data._boundary)
+          authorization: 'token-here'
         }
-      }).then(function (res) {
-        console.log('res: ', res);
+      };
+      formData.append("image", image);
+      formData.append("title", title);
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/images", formData, config).then(function (_ref) {
+        var data = _ref.data;
+
+        if (data === 'Successfully uploaded') {
+          return _this.setState({
+            sucess: true
+          }, function () {
+            _this.props.uploaded('success');
+          });
+        }
+
+        return _this.props.uploaded('fail');
       });
     };
 
     _this.state = {
       title: '',
       image: null,
-      progress: 0,
-      errors: []
+      sucess: false,
+      errors: [],
+      supported_mime: ['image/jpeg', 'image/png', 'image/gif']
     };
     return _this;
   }
@@ -79259,7 +79280,8 @@ function (_Component) {
           title = _this$state2.title,
           image = _this$state2.image,
           progress = _this$state2.progress,
-          errors = _this$state2.errors;
+          errors = _this$state2.errors,
+          sucess = _this$state2.sucess;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row m-4 d-flex flex-column align-items-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -79270,7 +79292,8 @@ function (_Component) {
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         className: "form-inline".concat(!!title && !!image || errors.includes('title') || errors.includes('image') ? ' was-validated' : ''),
         onSubmit: this.handleSubmit,
-        noValidate: true
+        noValidate: true,
+        encType: "multipart/form-data"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {

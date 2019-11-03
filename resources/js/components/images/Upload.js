@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import FormData from 'form-data';
 import axios from 'axios';
 
 class Upload extends Component {
@@ -8,17 +7,23 @@ class Upload extends Component {
     this.state = {
       title: '',
       image: null,
-      progress: 0,
-      errors: []
+      sucess: false,
+      errors: [],
+      supported_mime : [
+        'image/jpeg',
+        'image/png',
+        'image/gif',
+      ]
     }
   }
   
   handleChange = (e) => {
     const { value, name } = e.target;
     let errors = this.state.errors.filter(error => error !== name);
-    if (name === 'image' && e.target.files[0]) {
-      const image = e.target.files[0];
-      return this.setState(() => ({image, errors}));
+    if (name === 'image' && (e.target.files || e.dataTransfer.files)) {
+      let files = e.target.files || e.dataTransfer.files;
+      if(this.state.supported_mime.includes(files[0].type))
+      return this.setState(() => ({image: files[0], errors}));
     } else {
       this.setState({[name]: value, errors});
     }
@@ -30,23 +35,26 @@ class Upload extends Component {
     if(!title || !image) {
       return this.setState({errors: ['title', 'image']});
     }
-    let data = new FormData();
-    data.append('file', image, image.name);
-    data.append('title', title);
-    axios.post('/api/images', data, {
+    let formData = new FormData();
+    let config = {
       headers: {
-        'accept': 'application/json',
-        'Accept-Language': 'en-US,en;q=0.8',
-        'Content-Type': `multipart/form-data; boundary=${data._boundary}`,
+        authorization: 'token-here'
       }
-    }).then((res) => {
-      console.log('res: ', res);
-
-    })
+    }
+    formData.append("image", image);
+    formData.append("title", title);
+    axios.post("/api/images", formData, config).then(({data}) => {
+      if(data === 'Successfully uploaded') {
+        return this.setState({sucess: true}, () => {
+          this.props.uploaded('success');
+        })
+      }
+      return this.props.uploaded('fail');
+    });
   }
 
   render() { 
-    const { title, image, progress, errors } = this.state;
+    const { title, image, progress, errors, sucess } = this.state;
     return <div className="row m-4 d-flex flex-column align-items-center">
       <div className="my-3">
         <progress value={progress} max="100"/>
@@ -55,6 +63,7 @@ class Upload extends Component {
         className={`form-inline${((!!title && !!image) || errors.includes('title') || errors.includes('image')) ? ' was-validated' : ''}`}
         onSubmit={this.handleSubmit}
         noValidate
+        encType="multipart/form-data"
       >
         <div className="form-group">
           <label htmlFor="title" className="sr-only">Title</label>
